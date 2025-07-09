@@ -1,0 +1,24 @@
+{
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "git-commit"
+    ],
+    "cSpell.enabledFileTypes": {
+        "toml": false,
+        "rust": false
+    },
+    "cSpell.words": [
+        "Colbyn",
+        "desugars",
+        "ebnf",
+        "punchiness",
+        "salesy",
+        "Wadman",
+        "XMLAI"
+    ]
+}

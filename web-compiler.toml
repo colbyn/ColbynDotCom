@@ -1,0 +1,17 @@
+[project]
+template = "templates/global.html"
+output = "output"
+
+[[targets]]
+type = "production"
+id = "github-pages"
+output = "docs"
+
+[[sources]]
+input = "pages/**/*.html"
+strip_prefix = "pages/"
+
+# [[sources]]
+# input = "blog/**/*.html"
+# template = "templates/blog-post.html"
+# hierarchy.parent = "file://./pages/blog.html"
