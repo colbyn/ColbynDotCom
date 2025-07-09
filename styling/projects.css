@@ -38,7 +38,7 @@ article {
     margin-right: 10px;
 }
 
-section.note {
+.note {
     background: #00ffae82;
     border-radius: 1rem;
     border: 0.8px solid #ffffff;
@@ -47,7 +47,7 @@ section.note {
     padding: 0;
 }
 
-section.note > .title {
+.note > .title {
     text-align: center;
     border-bottom: 0.5px solid #000;
     margin-bottom: 5px;
@@ -56,7 +56,7 @@ section.note > .title {
     text-transform: uppercase;
 }
 
-section.note > p {
+.note > p {
     margin: 10px;
 }
 
