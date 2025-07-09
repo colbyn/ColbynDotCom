@@ -14,6 +14,10 @@ p {
     margin: 0;
 }
 
+main {
+    margin-bottom: 100px;
+}
+
 main > h1.title {
     text-align: center;
     border: 1px solid #4d4d4d;
@@ -28,18 +32,22 @@ article {
     border-left: 1px solid #000;
     margin-left: 10px;
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
 }
 
-article.callout {
+section.note {
     background: #00ffae82;
     border-radius: 1rem;
     border: 0.8px solid #ffffff;
     box-shadow: 0 0 3px 0px #000000ab;
-    margin: 10px;
+    margin: 0;
     padding: 0;
 }
 
-article.callout > .title {
+section.note > .title {
     text-align: center;
     border-bottom: 0.5px solid #000;
     margin-bottom: 5px;
@@ -48,7 +56,7 @@ article.callout > .title {
     text-transform: uppercase;
 }
 
-article.callout > p {
+section.note > p {
     margin: 10px;
 }
 
