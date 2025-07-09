@@ -10,25 +10,24 @@ ol, ul {
     margin: 0;
 }
 
-header.landing {
+div.hero {
     margin-bottom: 10px;
-    background: #4b4b4b;
-    color: #fff;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
 }
 
-header.landing p.tagline {
-    margin: 10px 0;
+div.hero p.tagline {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 100;
-    border-top: 1px solid #000;
-    padding-top: 10px;
+    border: 1px solid #000;
+    border-radius: 0.25em;
+    margin: 10px;
+    padding: 0;
 }
 
-header.landing > * {
+div.hero > * {
     padding: 0px 10px;
 }
 
@@ -38,9 +37,9 @@ body > img.feature {
     padding: 10px;
 }
 
-header.landing h1, header.landing h2, header.landing h3, header.landing h4, header.landing h5, header.landing h6 {
+/* div.hero h1, div.hero h2, div.hero h3, div.hero h4, div.hero h5, div.hero h6 {
     color: inherit;
-}
+} */
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
     font-weight: 500;
@@ -99,9 +98,9 @@ body > footer.work-in-progress > .title {
     h1, h2, h3, h4, h5, h6 {
         color: #fff;
     }
-    header.landing {
+    /* div.hero {
         color: #fff;
         background: #141414;
-    }
+    } */
 }
 
