@@ -4,3 +4,9 @@ header.work-in-progress, footer.work-in-progress {
     background: #fff7df;
     box-shadow: 0 0 1px 0px #000;
 }
+
+header.work-in-progress > .title, footer.work-in-progress > .title {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
