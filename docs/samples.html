@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samples</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+  </style>
+  <link rel="stylesheet" href="styling/base.css">
+  <link rel="stylesheet" href="styling/typography.css">
+  <link rel="stylesheet" href="styling/homepage.css">
+  <style>
+    .site-header {
+        border-bottom: 1px solid #c3c3c3;
+        margin-bottom: 10px;
+    }
+    .site-header nav {
+        display: grid;
+        grid-template-columns: min-content 1fr auto;
+        align-items: center;
+    }
+    .site-header .logo-container img {
+        max-width: 120px;
+    }
+    .site-header ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2rem;
+    }
+    .site-header li {
+        display: flex;
+    }
+    .site-header li a {
+        text-decoration: none;
+        padding: 10px;
+    }
+  </style>
+  <style>
+    .breadcrumb {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .breadcrumb li + li::before {
+        content: "›";
+        color: #403d3d;
+    }
+  </style>
+  <style>
+     .site-footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     .site-footer p {
+          text-align: center;
+     }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html" class="logo-container"><img src="assets/logo.png" alt="Your Company Name"
+      data-auto-dark-mode="invert"></a>
+      <ol>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="samples.html">Samples</a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb">
+      <li>
+        <a href="index.html"><span>Colbyn's Landing Page</span></a>
+      </li>
+      <li>
+        <a href="samples.html"><span>Samples</span></a>
+      </li>
+    </ol>
+  </nav>
+  <div data-component="TabView" id="tabbed-samples">
+    <aside>
+      <ol>
+        <li><span>Section 1</span></li>
+        <li><span>Section 2</span></li>
+        <li><span>Section 3</span></li>
+      </ol>
+    </aside>
+    <div class="content">
+      <section data-key="section-1" data-label="Section 1">
+        <h1>Section 1</h1>
+      </section>
+      <section data-key="section-2" data-label="Section 2">
+        <h1>Section 2</h1>
+      </section>
+      <section data-key="section-3" data-label="Section 3">
+        <h1>Section 3</h1>
+      </section>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <p>© 2025 My Static Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>
