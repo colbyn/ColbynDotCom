@@ -65,9 +65,7 @@ main section {
     padding-left: 5px;
 }
 
-div.gallery {
-
-}
+/* div.gallery {} */
 
 div.gallery > img {
     border-radius: 1em;
@@ -90,6 +88,13 @@ body > footer.work-in-progress > .title {
     text-align: center;
 }
 
+@media (max-width: 500px) {
+    body > img.feature {
+        padding: 0;
+        border-radius: unset;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     h1, h2, h3, h4, h5, h6 {
         color: #fff;
@@ -99,3 +104,4 @@ body > footer.work-in-progress > .title {
         background: #141414;
     }
 }
+
