@@ -79,6 +79,13 @@ div.gallery > img {
     display: block;
 }
 
+body > footer.work-in-progress {
+    border-top: 1px solid #000;
+    margin-top: 10px;
+    padding: 20px;
+    background: #ffe8e875;
+}
+
 @media (prefers-color-scheme: dark) {
     h1, h2, h3, h4, h5, h6 {
         color: #fff;
