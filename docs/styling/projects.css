@@ -38,7 +38,7 @@ article {
     margin-right: 10px;
 }
 
-.note {
+.blocknote {
     background: #00ffae82;
     border-radius: 1rem;
     border: 0.8px solid #ffffff;
@@ -47,7 +47,7 @@ article {
     padding: 0;
 }
 
-.note > .title {
+.blocknote > .title {
     text-align: center;
     border-bottom: 0.5px solid #000;
     margin-bottom: 5px;
@@ -56,7 +56,7 @@ article {
     text-transform: uppercase;
 }
 
-.note > p {
+.blocknote > p {
     margin: 10px;
 }
 
@@ -66,4 +66,27 @@ main > header {
     padding-bottom: 10px;
     background: #fff7df;
     box-shadow: 0 0 1px 0px #000;
+}
+
+li {
+
+}
+
+li::marker {}
+
+li span.component {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 10px;
+}
+
+span.box {
+    background: #ff00004a;
+    padding: 2px;
+    border-radius: 0.2em;
+}
+
+li blockquote {
+    margin: 0;
 }
