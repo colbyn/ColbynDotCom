@@ -14,6 +14,11 @@ footer.work-in-progress>.title {
     text-transform: uppercase;
 }
 
+header.work-in-progress p,
+footer.work-in-progress p {
+    text-align: center;
+}
+
 .scroll-container {
     overflow-x: auto;
     overflow-y: hidden;
