@@ -10,12 +10,12 @@ h1, h2, h3, h4, h5, h6, p, li, a, address, blockquote, td, th, input, textarea, 
     font-variation-settings: "wdth" 100;
 }
 
-h1 { font-size: 3.5rem; }
-h2 { font-size: 3.0rem; }
-h3 { font-size: 2.5rem; }
-h4 { font-size: 2.0rem; }
-h5 { font-size: 1.5rem; }
-h6 { font-size: 1.0rem; }
+h1 { font-size: 3.0rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2.0rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.0rem; }
+h6 { font-size: 0.8rem; }
 
 a {
     color: #000;
