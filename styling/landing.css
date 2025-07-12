@@ -1,20 +1,71 @@
-/* h1, h2, h3, h4, h5, h6 {
-    padding: 20px 10px;
+div.hero-intro {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+div.hero-intro p.tagline {
     text-align: center;
-} */
+    font-size: 1.5rem;
+    font-weight: 100;
+    border: 1px solid #000;
+    border-radius: 0.25em;
+    margin: 10px;
+    padding: 0;
+}
+
+div.hero-intro h1 strong {
+    color: #00b5ff;
+}
+
+section.year-subsection {
+    border-left: 2px solid #bebebe;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-left: 6px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+section.year-subsection:last-child {
+    padding-bottom: 0;
+}
+
+section.year-subsection ul {
+    margin: 0;
+}
+
+section.year-subsection ul li p {
+    margin: 0;
+}
+
+section.blocknote {
+    border: 1px solid #b0b1b1;
+    border-radius: 0.5rem;
+    padding: 10px;
+    box-shadow: 0 0 3px 0px #7f7f7f;
+}
+
+section.blocknote .title {
+    text-align: center;
+}
 
 section p.note {
-    background: #838383;
+    background: #ffffff;
+    box-shadow: 0 0 4px 0px #b4b4b4;
+    border: 0.5px solid #ffffff;
     padding: 20px;
     margin: 10px;
     border-radius: 0.5rem;
     text-align: justify;
-    box-shadow: 0 0 4px 0px #000;
-    border: 0.5px solid #353535;
 }
 
 @media (prefers-color-scheme: dark) {
     section p.note {
+        box-shadow: 0 0 4px 0px #000;
+        border: 0.5px solid #353535;
         background: #151515;
     }
 }
