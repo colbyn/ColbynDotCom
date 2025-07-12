@@ -1,12 +1,56 @@
-header.work-in-progress, footer.work-in-progress {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+header.work-in-progress,
+footer.work-in-progress {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     background: #fff7df;
-    box-shadow: 0 0 1px 0px #000;
+    box-shadow: 0 0 1px #000;
 }
 
-header.work-in-progress > .title, footer.work-in-progress > .title {
+header.work-in-progress>.title,
+footer.work-in-progress>.title {
     text-align: center;
     font-weight: 200;
     text-transform: uppercase;
 }
+
+.scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 10px 20px;
+    /* background-image: url("../images/backgrounds/linen.png"); */
+}
+
+.scroll-container img {
+    display: block;
+    height: auto;
+    max-height: 500px;
+    margin: 10px;
+    border-radius: 1em;
+    border: .5px solid #2f2f2f;
+    box-shadow: 0 0 2px 1px #000000;
+}
+
+.scroll-container>picture {
+    display: inline-block;
+    min-width: max-content;
+}
+
+.scroll-container picture {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    header.work-in-progress *,
+    footer.work-in-progress * {
+        color: #000;
+    }
+    /* .scroll-container {
+        background-image: url("../images/backgrounds/grey_wash_wall.png");
+    } */
+}
+
