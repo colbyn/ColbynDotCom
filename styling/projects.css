@@ -68,12 +68,6 @@ main > header {
     box-shadow: 0 0 1px 0px #000;
 }
 
-li {
-
-}
-
-li::marker {}
-
 li span.component {
     display: inline-flex;
     align-items: center;

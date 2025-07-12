@@ -3,6 +3,7 @@ div.hero-intro {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 div.hero-intro p.tagline {
@@ -62,15 +63,18 @@ section p.note {
     text-align: justify;
 }
 
+section h3 {
+    font-weight: 100;
+}
+
+body > section:not(.fullscreen), body > article:not(.fullscreen) {
+    padding: 0 20px;
+}
+
 @media (prefers-color-scheme: dark) {
     section p.note {
         box-shadow: 0 0 4px 0px #000;
         border: 0.5px solid #353535;
         background: #151515;
     }
-}
-
-
-section h3 {
-    font-weight: 100;
 }
