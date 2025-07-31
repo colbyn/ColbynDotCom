@@ -8,6 +8,10 @@ id = "github-pages"
 output = "docs"
 
 [[sources]]
+input = "resume/**/*.html"
+template = "templates/resume.html"
+
+[[sources]]
 input = "pages/**/*.html"
 strip_prefix = "pages/"
 
