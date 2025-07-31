@@ -1,0 +1,239 @@
+/* ========================================================================= */
+/* RESET */
+/* ========================================================================= */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+    background-color: #fff;
+}
+
+/* ========================================================================= */
+/* BASICS */
+/* ========================================================================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+pre, code {
+    font-family: 'Noto Serif', serif;
+    color: #000;
+}
+
+p {
+    font-family: 'Source Sans Pro', serif;
+    color: #4e4e4e;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    font-family: 'Source Sans Pro', serif;
+    color: #000;
+}
+
+ul, ol, li, dl, dt, dd {
+    font-family: 'Source Sans Pro', serif;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+table, tr, td {
+    font-family: 'Source Sans Pro', serif;
+    color: #000;
+}
+
+/* ========================================================================= */
+/* NON-STANDARD STYLING */
+/* ========================================================================= */
+
+blockquote {
+    padding: 0;
+    margin-top: 0;
+    border-right: 4px solid #d3d3d3;
+    padding-right: 5px;
+    margin-right: 5px;
+    font-weight: 300;
+    border-left: none;
+    color: #404040;
+}
+
+blockquote p {
+    text-align: right;
+    color: inherit;
+}
+
+/* @page {
+    size: A4;
+    margin: 20mm;
+    @top-center {
+        vertical-align: center;
+        text-align: center;
+        background: #fafafa;
+        color: purple;
+        content: "Top-center margin";
+    }
+} */
+
+/* ========================================================================= */
+/* COMPONENTS */
+/* ========================================================================= */
+
+.badge {
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    padding: 0 4px;
+    font-weight: 100;
+}
+
+.badge * {
+    color: inherit;
+}
+
+.xlarge {
+    padding: 10px;
+}
+
+.tagset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    
+    break-before: avoid;
+    break-inside: avoid;
+    orphans: 2;
+    widows: 2;
+
+    /* Add these to help Chrome/WebKit behave */
+    page-break-before: avoid;
+    -webkit-column-break-before: avoid;
+}
+
+.tagset .tag {
+    border: 1px solid #e3e3e3;
+    color: #262626;
+    border-radius: 3px;
+    padding: 0 4px;
+    font-weight: 100;
+    white-space:nowrap;
+    display: inline-flex;
+}
+
+/* ========================================================================= */
+/* MAIN */
+/* ========================================================================= */
+
+header.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header.main h1.me {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #242424;
+}
+header.main p.tagline {
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #525252;
+    text-align: center;
+}
+
+
+div.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+div.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+div.tags p {
+    font-weight: 100;
+    color: #525252;
+    font-size: 1.2em;
+}
+
+header .tags .tag {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+section.year-overview footer ul {
+    margin-left: 30px;
+}
+
+/* ========================================================================= */
+/* MAIN LAYOUT */
+/* ========================================================================= */
+
+main article {
+    column-count: 2;
+}
+
+section.year-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.event {
+    border-left: 2px solid #d3d3d3;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+section.note {
+    break-inside: avoid-column;
+}
+
+
+section.year-overview h1,
+section.year-overview h2,
+section.year-overview h3,
+section.year-overview h4,
+section.year-overview h5,
+section.year-overview h6 {
+    break-after: avoid;
+    break-inside: avoid;
+    orphans: 2;
+    widows: 2;
+
+    /* Add these to help Chrome/WebKit behave */
+    page-break-after: avoid;
+    -webkit-column-break-after: avoid;
+}
+
+
