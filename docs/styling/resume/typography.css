@@ -49,3 +49,34 @@ table, tr, td {
     font-family: 'Source Sans Pro', serif;
     color: #000;
 }
+
+p.justified {
+    text-align: justify;
+    hyphens: auto;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-underline-offset: 2px;
+}
+
+
+
+
+/* ========================================================================= */
+/* INFO SECTION */
+/* ========================================================================= */
+
+section.info p,
+section.info li,
+section.info blockquote,
+section.info dd {
+  text-align: justify;
+  hyphens: auto;
+}
+
+section.info a {
+  text-align: left;
+  hyphens: none;
+}
+

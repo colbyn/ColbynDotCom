@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Colbyn's Resume</title>
   <meta name="description" content="Native iOS/macOS apps • Web dev • Dev tools">
@@ -66,7 +66,8 @@
   <main>
     <header class="main">
       <h1 class="me">Colbyn Wadman</h1>
-      <p class="tagline">I’m a custom tools/utilities guy but I’ve solved many other problems.</p>
+      <p class="tagline">I specialize in building custom tools and utilities — but I’ve tackled a wide range of
+      problems beyond that</p>
       <div class="tags">
         <p class="badge">Native iOS/macOS apps</p>
         <p class="badge">Web dev</p>
@@ -81,63 +82,83 @@
     <article class="newspaper">
       <section class="info">
         <h2>About Me</h2>
-        <p style="text-align: justify;">I fell in love with purely functional programming in my late teens and went
-        deep — pattern matching, sum types, and Hindley-Milner type inference became second nature. Though not a
-        professional compiler engineer, I’ve spent years building parsers, modeling data structures, and transforming
-        ASTs. This background shaped my approach to solving abstract, technically difficult problems from first
-        principles.</p>
-        <p style="text-align: justify;">In many ways, I’ve taken a nontraditional path — spending most of my twenties
-        pursuing independent technical work. It taught me how to solve hard problems (though not always how to make
-        money from them). Today, I’m especially strong in systems involving Rust and Swift, particularly in areas that
-        demand deep control, like custom TextKit2 rendering or domains where off-the-shelf tools — including AI — fall
-        short.</p>
+        <p class="justified">I fell in love with purely functional programming in my late teens and went deep — pattern
+        matching, sum types, and Hindley-Milner type inference became second nature. While not a professional compiler
+        engineer, I’ve spent years building parsers, modeling data structures, and transforming ASTs — an experience
+        that shaped my approach to solving abstract, technically difficult problems from first principles.</p>
+        <p class="justified">I’ve taken a nontraditional path — spending most of my twenties pursuing independent
+        technical work. It taught me how to solve hard problems (though not always how to make money from them). Today,
+        I’m especially strong in systems involving Rust and Swift, particularly in domains that demand deep control,
+        like custom TextKit2 rendering or workflows where off-the-shelf tools — including AI — fall short.</p>
       </section>
-      <h2>Core Competencies</h2>
       <section class="info">
+        <h2>Core Competencies</h2>
         <ul>
-          <li>Rust and Swift systems programming — CLI tools, cross-platform automation, high-performance backends</li>
-          <li>Custom compilers, parsers, and other analysis tools</li>
-          <li>Text layout/rendering with TextKit2 and CoreText</li>
-          <li>Static site compilers, AI-assisted copywriting pipelines, DOM transformation engines</li>
-          <li>Reverse engineering deeply nested JSON APIs (e.g., Google Maps, obfuscated payloads)</li>
+          <li>
+            <strong>Tooling & Compiler Pipelines</strong>
+            <ul>
+              <li>Custom compilers and parsers for domain-specific problems</li>
+              <li>Static site generators with macro-style HTML transformation</li>
+              <li>LLM-integrated pipelines for content scaffolding and structured copy</li>
+              <li>Dataset generation from EPUBs — using a prompt-templating DSL, retry logic, and schema
+              validation</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Systems Programming & Rendering</strong>
+            <ul>
+              <li>Rust and Swift for low-level CLI tools and automation workflows</li>
+              <li>Text rendering engines built on TextKit2, and custom layout systems</li>
+              <li>UI experimentation — including a React-style renderer in Rust</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Data Engineering & Reverse Engineering</strong>
+            <ul>
+              <li>Modeling and transforming structured/unstructured data at scale</li>
+              <li>Reverse engineering obfuscated API payloads (e.g., Google Maps <code>tbm=map</code>) for structured
+              extraction</li>
+            </ul>
+          </li>
         </ul>
       </section>
-      <h2>Selected Projects</h2>
       <section class="info">
+        <h2>Selected Projects</h2>
         <ul>
-          <li><strong>Static Site Compiler:</strong> Built a custom site compiler in Rust to replace CMS systems — with
-          macro-style HTML transforms, AI-assisted content generation, and SEO-first architecture.</li>
-          <li><strong>TextKit2 Engine:</strong> Developed a custom SwiftUI-compatible text rendering engine for
-          iOS/macOS that goes beyond UIKit’s capabilities.</li>
-          <li><strong>Google Maps Reverse Engineering:</strong> Manually dissected and modeled internal JSON payloads
-          from Google Maps (`tbm=map`) for lead generation and business intelligence pipelines.</li>
+          <li><strong>Subscript — Native Note-Taking App:</strong> A Swift-based tool with custom markup-based
+          typesetting and topic-centric navigation. Notes compile into self-hostable HTML archives — blending
+          structured knowledge capture with long-term portability. Designed for clarity and durability, not platform
+          lock-in.</li>
+          <li><strong>WebCompiler — Static Site Compiler:</strong> A Rust toolchain that replaces CMS platforms.
+          Supports macro-style HTML transforms, AI-generated content scaffolding, and modular DOM post-processing.
+          Powers all my client and personal web work.</li>
+          <li><strong>Compiler Generator for Language Datasets:</strong> Generates bilingual dictionary and phrasebook
+          datasets from EPUB sources using prompt-chained LLMs. Features deterministic preprocessing, error recovery,
+          retry logic, and structured output validation. Output compiles into native SQLite + SwiftUI app bundles.</li>
+          <li><strong>Google Maps Payload Modeling:</strong> Reverse engineered the obfuscated JSON structures behind
+          <code>tbm=map</code> search views to build a custom lead-generation pipeline. Includes geographic hierarchy
+          modeling and canonical business entity mapping.</li>
         </ul>
       </section>
-      <h2>Technologies I Work With</h2>
       <section class="info">
-        <p><strong>Languages:</strong> Rust, Swift, TypeScript, HTML/CSS, Bash</p>
+        <h2>Tooling Philosophy</h2>
+        <p class="justified">I prefer tools that I can reason about from the ground up. That’s why I often build my own
+        — whether it’s a site compiler, a prompt templating system, or a dataset generator. I value clarity,
+        determinism, and structural control over off-the-shelf flexibility. When a problem is weird, brittle, or
+        ill-defined, I work backwards until the tooling makes it tractable.</p>
+      </section>
+      <section class="info">
+        <h2>Technologies I Work With</h2>
+        <p><strong>Languages:</strong> Rust, Swift, TypeScript, HTML/CSS</p>
         <p><strong>Concepts:</strong> AST design, type inference, static analysis, compiler pipelines, data
         modeling</p>
-        <p><strong>Ecosystems:</strong> iOS (UIKit, AppKit, TextKit2), Web (design, services, DOM automation, SEO, AI
-        content scaffolding via custom tools)</p>
+        <p><strong>Ecosystems:</strong> iOS (UIKit, AppKit, TextKit2), Web (DOM automation, SEO, AI content
+        scaffolding, design systems)</p>
         <h2>What I’m Looking For</h2>
-        <p style="text-align: justify;">I'm best suited for roles where the problems are weird, the constraints are
-        real, and off-the-shelf solutions won’t cut it. Whether it's parsing something no one wants to parse, or
-        building systems that give you control back from the framework, I bring a strong mind for structure, tooling,
-        and long-term clarity.</p>
-      </section>
-      <h2>History</h2>
-      <section class="year-overview">
-        <h3>Undated</h3>
-        <section class="event">
-          <h4><span class="badge">Space Monkey</span> <small>Brief High School Internship</small></h4>
-          <p>Brief summer internship, back when I was 16 or 17, under my mentor, Tom Metge (when their office was
-          located in Murray).</p>
-        </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Python</span> <span class="tag">+ Communication</span>
-        </div>
+        <p class="justified">I’m best suited for roles with real constraints and unconventional problems — where
+        off-the-shelf solutions don’t apply. Whether it’s parsing data no one wants to touch or building tools that
+        restore control to the developer, I bring a structural mindset, a toolmaker’s instinct, and a focus on
+        long-term clarity.</p>
       </section>
       <section class="year-overview">
         <h3>2015</h3>
@@ -179,7 +200,11 @@
         <section class="event job">
           <h4><a href="https://imager.io"><span class="badge"><code>imager.io</code></span></a> Brute Force Image
           Optimization</h4>
-          <p>One of the best brute force image optimization tools</p>
+          <p class="justfied">One of the best image optimization tools on the markup.</p>
+          <p class="justfied">Imager is a tool for automated image compression, and can competitively optimize very
+          noisy, high resolution images into rather “tiny” files. It's pretty easy too.</p>
+          <p class="justfied">It uses ML based metrics in a trial ’n error sorta manner. Everything is free and open
+          source, with absolutely no SAAS lock-ins or vendors.</p>
         </section>
         <section class="event">
           <h4>Milestone</h4>
