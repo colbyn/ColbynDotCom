@@ -1,6 +1,6 @@
 # Web Compiler – Basic Demo
 
-This is a basic demonstration of the [Web Compiler](../../) — a custom static site compiler designed for developers who prefer authoring pure HTML fragments, compile-time components, and zero-runtime static sites.
+This is a basic demonstration of the [Web Compiler](https://github.com/SuperSwiftDev/WebCompiler) — a custom static site compiler designed for developers who prefer authoring pure HTML fragments, compile-time components, and zero-runtime static sites.
 
 Unlike typical static site generators, this compiler gives you full control over structure and semantics while still providing advanced features like layout composition, nested path resolution, and macro-like template expansion.
 
