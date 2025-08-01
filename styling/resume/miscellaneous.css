@@ -34,7 +34,11 @@ section.info p {
 }
 
 /* Lists within .info */
-section.info ul {
+/* section.info ul {
+    margin: 0 0 1em 1.25em;
+    padding: 0;
+} */
+section.info ul ul {
     margin: 0 0 1em 1.25em;
     padding: 0;
 }
