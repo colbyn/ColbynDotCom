@@ -19,6 +19,7 @@ h6 { font-size: 0.8rem; }
 
 a {
     color: #000;
+    line-break: anywhere;
 }
 
 p.xlarge {
