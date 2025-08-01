@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, address, blockquote, td, th, input, textarea, 
     font-weight: normal;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    line-break: auto;
 }
 
 h1 { font-size: 3.0rem; }
@@ -20,6 +21,7 @@ h6 { font-size: 0.8rem; }
 a {
     color: #000;
     line-break: anywhere;
+    hyphens: none;
 }
 
 p.xlarge {
