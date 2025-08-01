@@ -93,9 +93,8 @@ section.year-overview {
 }
 
 section.event {
-    border-left: 2px solid #d3d3d3;
-    padding-left: 5px;
-    margin-left: 5px;
+    border-left: 2px solid #00b4ff6e;
+    padding-left: 4px;
     display: flex;
     flex-direction: column;
     gap: 10px;
