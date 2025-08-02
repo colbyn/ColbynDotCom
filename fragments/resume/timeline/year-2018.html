@@ -1,0 +1,84 @@
+<article class="year">
+    <header class="year-header">
+        <h2 class="year-label">2018</h2>
+    </header>
+
+    <section class="project job">
+        <h3>
+            Secret Startup Experiment
+        </h3>
+        <div class="tag-grid">
+            <span class="tag">Video</span>
+            <span class="tag">DRM</span>
+        </div>
+    </section>
+
+    <section class="project">
+        <h3>SubSys/Compiler</h3>
+        <p>
+            <strong>GitHub:</strong><br>
+            <a href="https://github.com/SubSys/Compiler" target="_blank">https://github.com/SubSys/Compiler</a>
+        </p>
+        <p>
+            A cross-language compiler pipeline that translated <strong>Elm</strong> to <strong>Rust</strong>,
+            implemented in <strong>Haskell</strong>. Built to investigate whether a statically typed frontend could
+            target systems-level output while preserving semantics and safety guarantees.
+        </p>
+        <p>
+            The project leveraged Haskell’s type system not just to implement compiler stages, but to assert
+            compile-time properties of the translation itself — from type mapping to memory safety behavior. The result
+            was a proof-of-concept pipeline that tested the edges of language interoperability.
+        </p>
+
+        <h4>Key Features</h4>
+        <ul>
+            <li>Elm → Rust transpilation with semantic fidelity.</li>
+            <li>Typed IR modeled and verified in Haskell.</li>
+            <li>Explores correctness as a first-class design constraint.</li>
+        </ul>
+
+        <div class="tag-grid">
+            <span class="tag">Compiler Engineering</span>
+            <span class="tag">Elm</span>
+            <span class="tag">Rust</span>
+            <span class="tag">Haskell</span>
+            <span class="tag">Type Systems</span>
+            <span class="tag">Interoperability</span>
+            <span class="tag">Open Source</span>
+            <span class="tag">Experimental</span>
+        </div>
+    </section>
+
+    <section class="project">
+        <h3>colbyn/commands</h3>
+        <p>
+            <strong>GitHub:</strong><br>
+            <a href="https://github.com/colbyn/commands" target="_blank">https://github.com/colbyn/commands</a>
+        </p>
+        <p>
+            A minimal DSL for CLI scripting — inspired by Bash, but redesigned around indentation and composability.
+            This tool replaces brittle shell scripts with readable, structured code for automation-heavy workflows like
+            <strong>AWS deployments</strong>.
+        </p>
+        <p>
+            The syntax mimics the clarity of Python, but compiles to raw shell — enabling devs to write clean scripts
+            without giving up full control. Think <code>Make</code> meets <code>just</code>, with extras.
+        </p>
+
+        <h4>Key Features</h4>
+        <ul>
+            <li>Indentation-sensitive syntax for nested blocks.</li>
+            <li>Function embedding, aliasing, and multiline strings.</li>
+            <li>Supports structured parsing, silent execution, and CLI grouping.</li>
+        </ul>
+
+        <div class="tag-grid">
+            <span class="tag">CLI Tools</span>
+            <span class="tag">Automation</span>
+            <span class="tag">DSL</span>
+            <span class="tag">Bash-Inspired</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Open Source</span>
+        </div>
+    </section>
+</article>

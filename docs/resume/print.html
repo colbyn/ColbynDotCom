@@ -1,325 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Colbyn's Resume</title>
-  <meta name="description" content="Native iOS/macOS apps • Web dev • Dev tools">
-  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+  <title>My Site</title>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   <link href=
-  "https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+  "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
   rel="stylesheet">
-  <link href=
-  "https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
-  rel="stylesheet">
-  <script type="application/ld+json">
-    [
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Colbyn Wadman",
-            "url": "https://colbyn.com",
-            "sameAs": [
-                "https://github.com/colbyn",
-                "https://www.youtube.com/@colbyn-wadman"
-            ],
-            "jobTitle": "Software Developer",
-            "knowsAbout": [
-                "Rust", "Swift", "HTML", "CSS", "JavaScript", "Compilers", "Functional Programming"
-            ]
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "ProfilePage",
-            "name": "Colbyn Wadman's Developer Profile",
-            "description": "Portfolio and contact info for Rust/Swift developer Colbyn Wadman",
-            "mainEntity": {
-                "@type": "Person",
-                "name": "Colbyn Wadman"
-            }
-        }
-    ]
-  </script>
   <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            box-sizing: border-box;
-        }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
   </style>
-  <link rel="stylesheet" type="text/css" href="../styling/resume/reset.css">
-  <link rel="stylesheet" type="text/css" href="../styling/resume/typography.css">
-  <link rel="stylesheet" type="text/css" href="../styling/resume/basics.css">
-  <link rel="stylesheet" type="text/css" href="../styling/resume/components.css">
-  <link rel="stylesheet" type="text/css" href="../styling/resume/miscellaneous.css">
-  <link rel="stylesheet" type="text/css" href="../styling/resume/main.css">
+  <link rel="stylesheet" href="../templates/resume/typography.css">
+  <link rel="stylesheet" href="../templates/resume/layout.css">
+  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 </head>
 <body>
+  <link rel="stylesheet" type="text/css" href="common.css">
   <main>
-    <header class="main">
-      <h1 class="me">Colbyn Wadman</h1>
-      <p class="tagline">I specialize in building custom tools and utilities — but I’ve tackled a wide range of
-      problems beyond that</p>
-      <div class="tags">
-        <p class="badge">Native iOS/macOS apps</p>
-        <p class="badge">Web dev</p>
-        <p class="badge">Dev tools</p>
+    <link rel="stylesheet" type="text/css" href="../fragments/resume/timeline.css">
+    <link rel="stylesheet" type="text/css" href="../fragments/resume/preamble.css">
+    <div class="preamble">
+      <header class="main">
+        <h1 class="me">Colbyn Wadman</h1>
+        <p class="tagline">I specialize in building custom tools and utilities — but I’ve tackled a wide range of
+        problems beyond that</p>
+        <div class="tags">
+          <p class="tag">Apps</p>
+          <p class="tag">Tools</p>
+          <p class="tag">Automation</p>
+          <p class="tag">Data/AI Pipelines</p>
+          <p class="tag">Solo Builder</p>
+          <p class="tag">Technically Fluent Writer</p>
+        </div>
+      </header>
+      <div class="contact-options">
+        <p class="contact"><code>hello@colbyn.com</code></p>
+        <p class="contact"><a href="https://colbyn.com"><code>colbyn.com</code></a></p>
+        <p class="contact"><code>801-367-4487</code></p>
       </div>
-    </header>
-    <div class="contact">
-      <p class="badge xlarge"><code>hello@colbyn.com</code></p>
-      <p class="badge xlarge"><a href="https://colbyn.com"><code>colbyn.com</code></a></p>
-      <p class="badge xlarge"><code>801-367-4487</code></p>
     </div>
-    <article class="newspaper">
-      <section class="info">
-        <h2>About Me</h2>
-        <p class="justified">I fell in love with purely functional programming in my late teens and went deep — pattern
-        matching, sum types, and Hindley-Milner type inference became second nature. While not a professional compiler
-        engineer, I’ve spent years building parsers, modeling data structures, and transforming ASTs — an experience
-        that shaped my approach to solving abstract, technically difficult problems from first principles.</p>
-        <p class="justified">I’ve taken a nontraditional path — spending most of my twenties pursuing independent
-        technical work. It taught me how to solve hard problems (though not always how to make money from them). Today,
-        I’m especially strong in systems involving Rust and Swift, particularly in domains that demand deep control,
-        like custom TextKit2 rendering or workflows where off-the-shelf tools — including AI — fall short.</p>
-      </section>
-      <section class="info">
-        <h2>Core Competencies</h2>
-        <ul>
-          <li>
-            <strong>Tooling & Compiler Pipelines</strong>
-            <ul>
-              <li>Custom compilers and parsers for domain-specific problems</li>
-              <li>Static site generators with macro-style HTML transformation</li>
-              <li>LLM-integrated pipelines for content scaffolding and structured copy</li>
-              <li>Dataset generation from EPUBs — using a prompt-templating DSL, retry logic, and schema
-              validation</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Systems Programming & Rendering</strong>
-            <ul>
-              <li>Rust and Swift for low-level CLI tools and automation workflows</li>
-              <li>Text rendering engines built on TextKit2, and custom layout systems</li>
-              <li>UI experimentation — including a React-style renderer in Rust</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Data Engineering & Reverse Engineering</strong>
-            <ul>
-              <li>Modeling and transforming structured/unstructured data at scale</li>
-              <li>Reverse engineering obfuscated API payloads (e.g., Google Maps <code>tbm=map</code>) for structured
-              extraction</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="info">
-        <h2>Selected Projects</h2>
-        <ul>
-          <li><strong>Subscript — Native Note-Taking App:</strong> A Swift-based tool with custom markup-based
-          typesetting and topic-centric navigation. Notes compile into self-hostable HTML archives — blending
-          structured knowledge capture with long-term portability. Designed for clarity and durability, not platform
-          lock-in.</li>
-          <li><strong>WebCompiler — Static Site Compiler:</strong> A Rust toolchain that replaces CMS platforms.
-          Supports macro-style HTML transforms, AI-generated content scaffolding, and modular DOM post-processing.
-          Powers all my client and personal web work.</li>
-          <li><strong>Compiler Generator for Language Datasets:</strong> Generates bilingual dictionary and phrasebook
-          datasets from EPUB sources using prompt-chained LLMs. Features deterministic preprocessing, error recovery,
-          retry logic, and structured output validation. Output compiles into native SQLite + SwiftUI app bundles.</li>
-          <li><strong>Google Maps Payload Modeling:</strong> Reverse engineered the obfuscated JSON structures behind
-          <code>tbm=map</code> search views to build a custom lead-generation pipeline. Includes geographic hierarchy
-          modeling and canonical business entity mapping.</li>
-        </ul>
-      </section>
-      <section class="info">
-        <h2>Tooling Philosophy</h2>
-        <p class="justified">I prefer tools that I can reason about from the ground up. That’s why I often build my own
-        — whether it’s a site compiler, a prompt templating system, or a dataset generator. I value clarity,
-        determinism, and structural control over off-the-shelf flexibility. When a problem is weird, brittle, or
-        ill-defined, I work backwards until the tooling makes it tractable.</p>
-      </section>
-      <section class="info">
-        <h2>Technologies I Work With</h2>
-        <p><strong>Languages:</strong> Rust, Swift, TypeScript, HTML/CSS</p>
-        <p><strong>Concepts:</strong> AST design, type inference, static analysis, compiler pipelines, data
-        modeling</p>
-        <p><strong>Ecosystems:</strong> iOS (UIKit, AppKit, TextKit2), Web (DOM automation, SEO, AI content
-        scaffolding, design systems)</p>
-        <h2>What I’m Looking For</h2>
-        <p class="justified">I’m best suited for roles with real constraints and unconventional problems — where
-        off-the-shelf solutions don’t apply. Whether it’s parsing data no one wants to touch or building tools that
-        restore control to the developer, I bring a structural mindset, a toolmaker’s instinct, and a focus on
-        long-term clarity.</p>
-      </section>
-      <h2>History</h2>
-      <section class="year-overview">
-        <h3>2015</h3>
-        <section class="event">
-          <h4><span class="badge">Galileo Processing</span> <small>Data Center Tech</small></h4>
-          <p><small>Note that I'm not 100% sure when began working here.</small></p>
+    <section class="timeline">
+      <article class="year biography">
+        <section class="info">
+          <h2>About Me</h2>
+          <p class="justified">Self-taught systems builder with a background in functional programming and years spent
+          crafting custom parsers, transforming ASTs, and working from first principles. My path has been
+          unconventional, shaped by independent technical work that prioritized depth over conformity. I work best
+          where off-the-shelf tools break down — especially in Rust, Swift, and domains requiring tight control.</p>
         </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Python</span> <span class="tag">+ Basic Networking</span> <span class="tag">+ Datacenter
-          Misc.</span> <span class="tag">+ Communication</span>
-        </div>
-      </section>
-      <section class="year-overview">
-        <h3>2016</h3>
-        <section class="event job">
-          <h4><span class="badge">Uplynk/VDMS</span> (Verizon Digital Media Services) <small>Jr. Developer</small></h4>
-          <p>Jr. developer in the QA team lead by Asiel Brumfield. I'm not entirely sure when I began working. I left
-          to pursue a startup with my uncle in encrypted images.</p>
-        </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Python</span> <span class="tag">+ Q/A</span> <span class="tag">+ basic Rust</span>
-          <span class="tag">+ basic Video</span>
-        </div>
-      </section>
-      <section class="year-overview">
-        <h3>2018</h3>
-        <section class="event job">
-          <h4>Secret Startup Experiment</h4>
-        </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Video</span> <span class="tag">+ Haskell</span> <span class="tag">+ ffmpeg CLI</span>
-        </div>
-      </section>
-      <section class="year-overview">
-        <h3>2019</h3>
-        <section class="event job">
-          <h4><a href="https://imager.io"><span class="badge"><code>imager.io</code></span></a> Brute Force Image
-          Optimization</h4>
-          <p class="justfied">One of the best image optimization tools on the markup.</p>
-          <p class="justfied">Imager is a tool for automated image compression, and can competitively optimize very
-          noisy, high resolution images into rather “tiny” files. It's pretty easy too.</p>
-          <p class="justfied">It uses ML based metrics in a trial ’n error sorta manner. Everything is free and open
-          source, with absolutely no SAAS lock-ins or vendors.</p>
-        </section>
-        <section class="event">
-          <h4>Milestone</h4>
-          <p><strong>According to GitHub in 2019 I made 1,323 contributions.</strong></p>
-          <p>To put this in perspective: according to this <a href=
-          "https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/">data
-          source</a><sup>†</sup>, from December 2016 to December 2017, the 256th person (at the end of the list) made
-          1,322 total contributions. <strong>So I beat the 256th person by a single contribution.</strong></p>
-          <p>Why am I not in these lists? Because they unfortunately filter out accounts without a sufficient number of
-          followers.</p>
-        </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Video Processing</span> <span class="tag">+ Video Codecs</span> <span class="tag">+
-          Rust</span> <span class="tag">+ C</span> <span class="tag">+ ffmpeg c libs</span> <span class="tag">+ Unsafe
-          Rust (FFI)</span>
-        </div>
-        <footer>
-          <ul style="list-style: none;">
-            <li style="color: #262626; font-weight: 100; line-break: anywhere;">
-              <sup>[†]</sup> <a href=
-              "https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/" style=
-              "text-decoration: none;">https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/</a>
+        <section class="info">
+          <h2>Core Competencies</h2>
+          <ul>
+            <li>
+              <strong>Compilers & Tooling</strong>
+              <ul>
+                <li>Domain-specific parsers, macro-based HTML compilers, prompt-driven content pipelines</li>
+                <li>Dataset generation from EPUBs with retry logic and schema validation</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Systems & Rendering</strong>
+              <ul>
+                <li>Rust and Swift CLI tools, TextKit2 engines, custom layout systems</li>
+                <li>UI prototyping, including a React-style renderer in Rust</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Data & Reverse Engineering</strong>
+              <ul>
+                <li>Modeling structured/unstructured data at scale</li>
+                <li>Dissecting obfuscated APIs (e.g. Google Maps payloads)</li>
+              </ul>
             </li>
           </ul>
-        </footer>
-      </section>
-      <section class="year-overview">
-        <h3>2020</h3>
-        <section class="event job">
-          <h4>Began College</h4>
-          <section class="note">
-            <h5>Notable Comments</h5>
-            <blockquote>
-              <p>You are such a profound writer and thinker. It has been my privilege to be your instructor of record.
-              One day I will say, I had him in my English class. I have such high hopes for you! Go conquer your world!
-              You're awesome.<br>
-              —Dr. Jim Birrell</p>
-            </blockquote>
-          </section>
         </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ LaTeX</span>
-        </div>
-        <section class="event job">
-          <h4><span class="badge">UVU</span> CS Grader - Computer Science</h4>
+        <section class="info">
+          <h2>Selected Projects</h2>
+          <ul>
+            <li><strong>Subscript:</strong> A Swift note-taking app with typesetting, freeform sketches and
+            offline-compiled HTML exports.</li>
+            <li><strong>WebCompiler:</strong> Rust-based static site generator with modular transforms and LLM
+            scaffolding. Replaces CMS workflows.</li>
+            <li><strong>Dataset Compiler:</strong> EPUB-to-custom dataset pipeline using LLMs, with deterministic logic
+            and app specific code-gen.</li>
+            <li><strong>Google Maps Decoder:</strong> Reverse-engineered map payloads to build a structured lead-gen
+            engine.</li>
+          </ul>
+        </section>
+        <section class="info">
+          <h2>Tooling Philosophy</h2>
+          <p class="justified">I build tools I can reason about end-to-end. Whether it’s a compiler or a templating
+          DSL, I care about determinism, clarity, and making brittle problems tractable by reshaping them at the
+          tooling layer.</p>
+        </section>
+        <section class="info">
+          <h2>Fit</h2>
+          <p class="justified">I’m drawn to roles where conventional tools fall short — places that need structural
+          thinkers and builders who prefer clarity over convenience.</p>
+        </section>
+      </article>
+      <h1>History</h1>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2015</h2>
+        </header>
+        <section class="project job">
+          <h3><span class="outline">Galileo Processing</span> <span class="role">Data Center Tech</span></h3>
+          <div class="tag-grid">
+            <span class="tag">Basic Networking</span> <span class="tag">Datacenter Misc.</span> <span class=
+            "tag">Communication</span>
+          </div>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2016</h2>
+        </header>
+        <section class="project job">
+          <h3><span class="outline">Uplynk/VDMS</span> (Verizon Digital Media Services) <span class="role">Jr.
+          Developer</span></h3>
+          <p>Jr. developer in the QA team lead by Asiel Brumfield. I'm not entirely sure when I began working. I left
+          to pursue a startup with my uncle in encrypted images.</p>
+          <div class="tag-grid">
+            <span class="tag">Python</span> <span class="tag">Q/A</span> <span class="tag">video streaming</span>
+          </div>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2018</h2>
+        </header>
+        <section class="project job">
+          <h3>Secret Startup Experiment</h3>
+          <div class="tag-grid">
+            <span class="tag">Video</span> <span class="tag">DRM</span>
+          </div>
+        </section>
+        <section class="project">
+          <h3>SubSys/Compiler</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/SubSys/Compiler" target="_blank">https://github.com/SubSys/Compiler</a></p>
+          <p>A cross-language compiler pipeline that translated <strong>Elm</strong> to <strong>Rust</strong>,
+          implemented in <strong>Haskell</strong>. Built to investigate whether a statically typed frontend could
+          target systems-level output while preserving semantics and safety guarantees.</p>
+          <p>The project leveraged Haskell’s type system not just to implement compiler stages, but to assert
+          compile-time properties of the translation itself — from type mapping to memory safety behavior. The result
+          was a proof-of-concept pipeline that tested the edges of language interoperability.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Elm → Rust transpilation with semantic fidelity.</li>
+            <li>Typed IR modeled and verified in Haskell.</li>
+            <li>Explores correctness as a first-class design constraint.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Compiler Engineering</span> <span class="tag">Elm</span> <span class="tag">Rust</span>
+            <span class="tag">Haskell</span> <span class="tag">Type Systems</span> <span class=
+            "tag">Interoperability</span> <span class="tag">Open Source</span> <span class="tag">Experimental</span>
+          </div>
+        </section>
+        <section class="project">
+          <h3>colbyn/commands</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/colbyn/commands" target="_blank">https://github.com/colbyn/commands</a></p>
+          <p>A minimal DSL for CLI scripting — inspired by Bash, but redesigned around indentation and composability.
+          This tool replaces brittle shell scripts with readable, structured code for automation-heavy workflows like
+          <strong>AWS deployments</strong>.</p>
+          <p>The syntax mimics the clarity of Python, but compiles to raw shell — enabling devs to write clean scripts
+          without giving up full control. Think <code>Make</code> meets <code>just</code>, with extras.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Indentation-sensitive syntax for nested blocks.</li>
+            <li>Function embedding, aliasing, and multiline strings.</li>
+            <li>Supports structured parsing, silent execution, and CLI grouping.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">CLI Tools</span> <span class="tag">Automation</span> <span class="tag">DSL</span>
+            <span class="tag">Bash-Inspired</span> <span class="tag">AWS</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2019</h2>
+        </header>
+        <section class="project job">
+          <h3>Imager</h3>
+          <p><a href="https://imager.io" target="_blank">imager.io</a> &nbsp;|&nbsp; <a href=
+          "https://github.com/imager-io" target="_blank">github.com/imager-io</a></p>
+          <p><b>One of the best image optimization tools on the market.</b></p>
+          <p>A modular, open-source image optimization platform designed to outperform commercial tools like kraken.io
+          — with no SaaS dependencies. At its core: a <strong>Rust-based encoder</strong> guided by
+          <strong>machine-learned visual metrics</strong>, wrapped in a clean CLI and consumable through
+          <strong>Node.js bindings</strong>.</p>
+          <p>The toolchain included native bindings (<code>webp-dev-rs</code>, <code>ffmpeg-dev-rs</code>,
+          <code>x264-dev</code>, <code>vmaf-sys</code>) and a Rust-to-JS bridge via <code>imager-io-js</code>.
+          Benchmarks showed over <strong>90% file size reduction</strong> compared to popular SaaS optimizers — without
+          perceptual quality loss.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Rust-based encoder with ML-guided format selection (WebP, JPEG, x264).</li>
+            <li><code>imager-bench</code> benchmark suite beating kraken.io and jpegmini.</li>
+            <li>Zero-dependency Node.js pipeline with native bindings for real-time processing.</li>
+            <li>Full FFmpeg and VMAF support via custom Rust FFI crates.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Image Processing</span> <span class="tag">Machine Learning</span> <span class=
+            "tag">Rust</span> <span class="tag">Node.js</span> <span class="tag">WebP</span> <span class=
+            "tag">FFmpeg</span> <span class="tag">x264</span> <span class="tag">VMAF</span> <span class=
+            "tag">Performance Optimization</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+        <section class="project">
+          <h3>colbyn/web-images-js</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/colbyn/web-images-js" target=
+          "_blank">https://github.com/colbyn/web-images-js</a></p>
+          <p>A zero-dependency image pipeline for Node.js — built entirely in Rust and embedded directly in JS
+          workflows. Offers full control over memory, binary size, and output quality without external tools or native
+          runtime bindings.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>High-performance image loading and transformation in native Rust.</li>
+            <li>Statically linked builds for reproducibility and safety.</li>
+            <li>Optimized for deployment in serverless and JAMstack environments.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Rust</span> <span class="tag">Node.js</span> <span class="tag">Web Development</span>
+            <span class="tag">Performance Optimization</span> <span class="tag">Image Processing</span> <span class=
+            "tag">Dependency-Free</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+        <section class="project">
+          <h3>colbyn/subscript-old</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/colbyn/subscript-old">https://github.com/colbyn/subscript-old</a></p>
+          <p>I renamed this project to <code>subscript-old</code> after I decide to call my note taking tools
+          ‘subscript’ which seemed more fitting because it dealt with typesetting. <b>There’s actually some pretty cool
+          ideas in here. Abandoning this project is a major regret of my life.</b></p>
+          <p>A data-driven, Rust-native frontend library designed for backend developers — Subscript rethinks web UI as
+          infrastructure. Built for those who want to author views, state, and styles entirely in Rust, with zero XML,
+          full CSSOM control, and expressive compile-time macros.</p>
+          <p>Ideal for backend developers treating the frontend as just another client — including full inline CSS
+          support (media queries, keyframes, pseudo elements) via a "selector-less functionalized CSS" model. Built-in
+          routing, component messaging, and versioned view syntax enable deeply structured applications without
+          frontend boilerplate.</p>
+          <h4>Feature Highlights</h4>
+          <ul>
+            <li>Inline Rust macros for <strong>media queries</strong>, <strong>keyframes</strong>, and <strong>pseudo
+            classes</strong>.</li>
+            <li><strong>Pattern-matching-like URL parsing</strong> using <code>parse_url!</code>, with totality checks
+            and type-safe bindings.</li>
+            <li><strong>Component messaging and subscriptions</strong>, including typed broadcasting and routing by
+            component type.</li>
+            <li>Versioned view macros like <code>v1!</code> for ergonomic and incremental UI design.</li>
+            <li>Zero-runtime-diffing model closer to Incremental DOM than virtual DOMs.</li>
+          </ul>
+          <h4>Example Syntax</h4>
+          <pre><code class="language-rust">parse_url! {
+  [] =&gt; {
+    Page::Homepage
+  },
+  ["account", user_id: Uuid] =&gt; {
+    Page::AccountUser {
+      id: user_id
+    }
+  },
+  _ =&gt; Page::NotFound
+};</code></pre>
+          <pre><code class="language-rust">v1! {
+  display: "flex";
+  button !{
+    event.click[] =&gt; {
+      move || Msg::Increment
+    };
+    "Increment";
+  }
+}</code></pre>
+          <h4>Tags</h4>
+          <div class="tag-grid">
+            <span class="tag">Rust</span> <span class="tag">Frontend</span> <span class="tag">WebAssembly</span>
+            <span class="tag">Macro Systems</span> <span class="tag">Routing</span> <span class="tag">UI
+            Framework</span> <span class="tag">CSSOM</span> <span class="tag">Open Source</span>
+          </div>
+          <p><strong>Impact:</strong> Inventive take on frontend architecture through Rust. Encourages architectural
+          unification between client and server codebases, with precise control over styling and rendering.</p>
+        </section>
+        <section class="project event milestone">
+          <h3>Milestone</h3>
+          <p><strong>At the end of 2019 I raked up an impressive 1,323 contributions on GitHub</strong> that placed me
+          among the platform’s most active developers.</p>
+          <p>To put this in perspective, data from a 2016–2017 GitHub ranking shows the 256th most active user recorded
+          1,322 contributions—my activity surpassed this benchmark, placing me among the platform’s top contributors.
+          While my work wasn’t featured in such lists due to follower-based filtering, my focus remains on creating
+          impactful projects like imager-io/imager (688 stars) and SuperSwiftMarkup/SuperSwiftMarkdownPrototype (58
+          stars). These contributions, driven by expertise in Rust and Swift, reflect my commitment to building tools
+          that empower the developer community.</p>
+          <p>Today, my GitHub profile is a living portfolio of grit and expertise.</p>
+          <p>Sources</p>
+          <p><strong>Top 2017 GitHub Contributors:</strong><br>
+          <a href="https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/" target=
+          "_blank">https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/</a></p>
+          <p><strong>Colbyn's GitHub Profile (stats at the bottom):</strong><br>
+          <a href="https://github.com/colbyn?tab=overview&amp;from=2019-12-01&amp;to=2019-12-31" target=
+          "_blank">https://github.com/colbyn?tab=overview&amp;from=2019-12-01&amp;to=2019-12-31</a></p>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2020</h2>
+        </header>
+        <section class="project event">
+          <h3>Began College</h3>
+          <p>Notable Comments</p>
+          <blockquote>
+            <p>You are such a profound writer and thinker. It has been my privilege to be your instructor of record.
+            One day I will say, I had him in my English class. I have such high hopes for you! Go conquer your world!
+            You're awesome.</p>
+            <p>—Dr. Jim Birrell</p>
+          </blockquote>
+          <div class="tag-grid">
+            <span class="tag">LaTeX</span>
+          </div>
+        </section>
+        <section class="project job">
+          <h3><span class="outline">UVU</span> <span class="role">CS Grader - Computer Science</span></h3>
           <p>In my first semester at UVU I took CS1400 by professor Bianca Ruiz, who then offered me a grading position
           at the end of the semester. I enjoyed this job and wish I stayed (I took trigonometry and calculus
           concurrently and was expecting subsequent semesters to be just as difficult).</p>
           <p>The instructor said my code looked “beautiful” before I signed up as a grader.</p>
+          <div class="tag-grid">
+            <span class="tag">Python</span> <span class="tag">Grading</span> <span class="tag">Teaching</span>
+            <span class="tag">Communication</span>
+          </div>
         </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Python</span> <span class="tag">+ Grading</span> <span class="tag">+ Teaching</span>
-          <span class="tag">+ Communication</span>
-        </div>
-      </section>
-      <section class="year-overview">
-        <h3>2022</h3>
-        <section class="event job" style="break-inside: avoid;">
-          <h4><span class="badge">Subscript</span> A Note Taking App</h4>
-          <p style="line-break: anywhere;">See my <a href="https://youtu.be/PEC5PyNhIds?si=W6w6zOrrK29rD37C">YouTube
-          Video</a><sup>†</sup> for details with commentary.</p>
-          <ul style="list-style: none;">
-            <li style="color: #262626; font-weight: 100; line-break: anywhere;">
-              <sup>[†]</sup> <a href="https://youtu.be/PEC5PyNhIds?si=W6w6zOrrK29rD37C" style=
-              "text-decoration: none;">https://youtu.be/PEC5PyNhIds?si=W6w6zOrrK29rD37C</a>
+        <section class="project">
+          <h3>The HTML Toolchain</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/subscript-publishing/subscript-html" target=
+          "_blank">https://github.com/subscript-publishing/subscript-html</a></p>
+          <p>A custom publishing system that reimagines LaTeX for the web. Designed to turn structured STEM notes into
+          responsive, navigable documents — blending handwritten diagrams, inline math, and semantic HTML in one
+          toolchain.</p>
+          <p>Unlike traditional LaTeX-to-PDF pipelines, this system outputs fully interactive HTML with live
+          navigation, mobile-ready layout, and auto-generated metadata. Built for note-taking first, publishing
+          second.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Autogenerated tables of contents and section links.</li>
+            <li>Hybrid support for typeset and hand-drawn inputs.</li>
+            <li>Responsive layout tuned for cross-device academic reading.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Academic Publishing</span> <span class="tag">LaTeX-Inspired</span> <span class=
+            "tag">HTML</span> <span class="tag">JavaScript</span> <span class="tag">Responsive Design</span>
+            <span class="tag">Note-Taking</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+        <section class="project">
+          <h3>My Beautiful Math Notes</h3>
+          <p><strong>school-notes-spring-2020:</strong><br>
+          <a href="https://colbyn.github.io/school-notes-spring-2020/" target=
+          "_blank">https://colbyn.github.io/school-notes-spring-2020/</a></p>
+          <p>A real-world testbed for Subscript’s HTML toolchain — compiling a semester of math coursework into an
+          interactive, web-native format. Features richly formatted equations, diagrams, and dynamic TOC navigation
+          across topics.</p>
+          <p>The project illustrates how digital notes can preserve mathematical rigor without compromising on
+          usability or design.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Clean math typesetting with inline and block notation.</li>
+            <li>Linked headings and deep navigation for modular study.</li>
+            <li>Designed for screen reading, not PDF output.</li>
+          </ul>
+          <p><strong>Final Culmination (pretty slick):</strong><br>
+          <a href="https://colbyn.github.io/all-school-notes/">https://colbyn.github.io/all-school-notes/</a><br>
+          Although looking back I prefer the old style:<br>
+          <a href=
+          "https://colbyn.github.io/school-notes-fall-2022/">https://colbyn.github.io/school-notes-fall-2022/</a></p>
+          <div class="tag-grid">
+            <span class="tag">Mathematics</span> <span class="tag">Academic Publishing</span> <span class=
+            "tag">Subscript</span> <span class="tag">HTML</span> <span class="tag">JavaScript</span> <span class=
+            "tag">Interactive Content</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+        <section class="project">
+          <h3>Subscript (iPad Edition + Authoring Tools)</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/subscript-publishing/subscript" target=
+          "_blank">https://github.com/subscript-publishing/subscript</a></p>
+          <p><b>Content publishing VIA Web-Technologies!</b></p>
+          <p>Supports freeform and typed markup content in one medium.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Seamlessly intermix markup with hand drawn content VIA the Subscript Freeform Tools (iPad only).</li>
+            <li>Redesigned macOS and iOS editor interfaces from the ground up.</li>
+            <li>Native rendering pipeline tuned for complex typeset math, and freeform sketch inputs.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Academic Publishing</span> <span class="tag">LaTeX-Inspired Markup Language</span>
+            <span class="tag">Drawing Tools</span> <span class="tag">JavaScript</span> <span class="tag">HTML</span>
+            <span class="tag">iPad</span> <span class="tag">UI/UX Design</span> <span class="tag">Swift</span>
+            <span class="tag">macOS</span> <span class="tag">iOS</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2021</h2>
+        </header>
+        <section class="project">
+          <h3>AMI Uploader</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/colbyn/ami-uploader" target=
+          "_blank">https://github.com/colbyn/ami-uploader</a></p>
+          <p>A lightweight Rust CLI designed to automate the upload of <strong>LinuxKit-generated AMIs</strong> to AWS
+          via S3. It streamlines the gap between image generation and cloud deployment — replacing manual S3 uploads
+          and AMI registration with a single, scriptable command.</p>
+          <p>Built for reliability in CI pipelines, the tool supports alternate credential injection, customizable AMI
+          naming, and metadata tagging. Designed for infrastructure engineers managing reproducible builds.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>One-command upload from local disk to registered AMI.</li>
+            <li>Supports name overrides, alternate AWS keys, and region targeting.</li>
+            <li>Integrates cleanly into LinuxKit or DevOps build pipelines.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">CLI Tools</span> <span class="tag">Rust</span> <span class="tag">AWS</span> <span class=
+            "tag">S3</span> <span class="tag">AMI</span> <span class="tag">LinuxKit</span> <span class=
+            "tag">DevOps</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2023</h2>
+        </header>
+        <section class="project">
+          <h3>punk-lang</h3>
+          <p><strong>GitHub:</strong> <a href="https://github.com/colbyn/punk-lang" target=
+          "_blank">https://github.com/colbyn/punk-lang</a></p>
+          <p>A deliberately minimal markup language with LaTeX-inspired syntax and depth-sensitive highlighting —
+          designed to test how little structure is needed to express complex educational content clearly.</p>
+          <p>The language focuses on parseability and pedagogical clarity: every visual highlight is tied to syntactic
+          depth, making nested logic or derivations easier to follow for learners. Built as a sketchpad for better
+          markup ergonomics.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Clean, expressive syntax for STEM writing and teaching.</li>
+            <li>Depth-aware syntax highlighting for conceptual layering.</li>
+            <li>Structured output with minimal rules — optimized for parsing.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Language Design</span> <span class="tag">Educational Content</span> <span class=
+            "tag">LaTeX-Inspired</span> <span class="tag">Syntax Highlighting</span> <span class="tag">Markup
+            Language</span> <span class="tag">Experimental</span> <span class="tag">Open Source</span>
+          </div>
+        </section>
+        <section class="project job">
+          <h3><span class="outline">Subscript</span> Freeform Note-Taking App (iOS/macOS)</h3>
+          <p>A handwritten, vector-based note-taking app built from scratch to prioritize <strong>human expression,
+          long-term readability, and semantic structure</strong>—a radical departure from PDF-constrained or
+          AI-assisted systems. Originally released on the App Store, I later withdrew it to re-architect the data model
+          and rethink structural primitives.</p>
+          <p>The app uses a custom model space for device-independent rendering, handwritten stroke capture with
+          velocity-aware smoothing (via a Swift port of <code>perfect-freehand</code>), and a semantically driven
+          outline system (H1–H6) for navigation and TOC generation.</p>
+          <p>Subscript reflects a broader philosophy: <strong>separation of content and presentation</strong>, inspired
+          by LaTeX, combined with the authenticity of freeform input—a medium resistant to AI mimicry.</p>
+          <p class="note">▶️ <a href="https://youtu.be/PEC5PyNhIds?si=W6w6zOrrK29rD37C" target="_blank">Intro: My
+          Note-Taking App & Why It Matters in the Age of Bots (YouTube)</a></p>
+          <div class="tag-grid">
+            <span class="tag">Swift</span> <span class="tag">Native iOS/macOS</span> <span class="tag">Unsafe Rust
+            (FFI)</span> <span class="tag">Vector Graphics</span> <span class="tag">Digital Ink</span> <span class=
+            "tag">Document Compiler</span>
+          </div>
+        </section>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2024</h2>
+        </header>
+        <section class="project">
+          <h3>Parser & Tree Visualization Toolkit</h3>
+          <p>A cohesive suite of language tooling libraries for <strong>Swift</strong> and <strong>Rust</strong>,
+          focused on parser combinator frameworks and human-friendly visualization of abstract syntax trees (ASTs) and
+          nested structures. Designed to support debugging, inspection, and language toolchain development in
+          functional and systems programming contexts.</p>
+          <p>Core components include <code>MonadoParser</code><sup>†</sup>, a monadic parser combinator framework for
+          Swift; <code>pretty-tree-rs</code><sup>‡</sup>, a minimal Rust library for rendering cleanly formatted
+          hierarchical data; and <code>SwiftPrettyTree</code><sup>§</sup>, a Swift-native port for readable tree
+          inspection in IDEs or CLI workflows.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Composable, lossless parsers with precise position tracking (<code>MonadoParser</code>).</li>
+            <li>Compact, dependency-free tree renderers for ASTs and nested structures.</li>
+            <li>Interoperable debugging tools for language tooling, REPLs, and test harnesses.</li>
+          </ul>
+          <div class="tag-grid">
+            <span class="tag">Parser Combinators</span> <span class="tag">Swift</span> <span class="tag">Rust</span>
+            <span class="tag">Functional Programming</span> <span class="tag">AST</span> <span class="tag">Debugging
+            Tools</span> <span class="tag">Compiler Engineering</span> <span class="tag">Open Source</span>
+          </div>
+          <ul class="footnotes">
+            <li data-symbol="†">
+              <a href="https://github.com/colbyn/MonadoParser" target="_blank">github.com/colbyn/MonadoParser</a>
+            </li>
+            <li data-symbol="‡">
+              <a href="https://github.com/colbyn/pretty-tree-rs" target="_blank">github.com/colbyn/pretty-tree-rs</a>
+            </li>
+            <li data-symbol="§">
+              <a href="https://github.com/colbyn/SwiftPrettyTree" target="_blank">github.com/colbyn/SwiftPrettyTree</a>
             </li>
           </ul>
         </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Swift</span> <span class="tag">+ Native iOS/macOS dev</span> <span class="tag">+ Unsafe
-          Rust (FFI)</span> <span class="tag">+ vector graphics</span>
-        </div>
-      </section>
-      <section class="year-overview">
-        <h3>2024</h3>
-        <section class="event job">
-          <h4><span class="badge">3in1Spanish</span> <small>Your go-to Spanish Dictionary, Phrasebook & Flash
-          Cards</small></h4>
+        <section class="project job">
+          <h3><span class="outline">3in1Spanish</span> <span class="tagline">Your go-to Spanish Dictionary, Phrasebook
+          & Flash Cards</span></h3>
           <p>A Bilingual Spanish Dictionary, Phrasebook & Flash Card App.</p>
-          <p class="note">Required a very sophisticated dataset generator that I called the compiler generator. See my
-          <a href="https://youtu.be/nofJLw51xSk?si=WrOwCT7WA6_VTBrO">YouTube Video</a><sup>†</sup> for details with
-          commentary.</p>
-          <ul style="list-style: none;">
-            <li style="color: #262626; font-weight: 100; line-break: anywhere;">
-              <sup>[†]</sup> <a href="https://youtu.be/nofJLw51xSk?si=WrOwCT7WA6_VTBrO" style=
-              "text-decoration: none;">https://youtu.be/nofJLw51xSk?si=WrOwCT7WA6_VTBrO</a>
-            </li>
-          </ul>
+          <p>Required a very sophisticated dataset generator that I called the compiler generator. See my YouTube Video
+          for details with commentary:<br>
+          <a href=
+          "https://youtu.be/nofJLw51xSk?si=WrOwCT7WA6_VTBrO">https://youtu.be/nofJLw51xSk?si=WrOwCT7WA6_VTBrO</a></p>
+          <div class="tag-grid">
+            <span class="tag">Prompt Engineering</span> <span class="tag">Data Pipelines</span> <span class="tag">AI
+            Centric Pipelines</span> <span class="tag">Dataset Generation</span>
+          </div>
         </section>
-        <section class="event job">
-          <h4><span class="badge">Bilingual Scriptures</span></h4>
-        </section>
-        <h4 class="tagset-header">Summary Tags</h4>
-        <div class="tagset">
-          <span class="tag">+ Prompt Engineering</span> <span class="tag">+ Data Pipelines</span> <span class="tag">+
-          AI Centric Pipelines</span> <span class="tag">+ Dataset Generation</span> <span class="tag">+
-          TextKit2<sup>†</sup></span>
-        </div>
-        <footer>
-          <ul style="list-style: none;">
-            <li style="color: #262626; font-weight: 100;"><sup>[†]</sup> Custom Markdown Rendering</li>
+      </article>
+      <article class="year">
+        <header class="year-header">
+          <h2 class="year-label">2025</h2>
+        </header>
+        <section class="project">
+          <h3>SuperSwiftMarkdownPrototype</h3>
+          <p><strong>GitHub:</strong><br>
+          <a href="https://github.com/SuperSwiftMarkup/SuperSwiftMarkdownPrototype" target=
+          "_blank">https://github.com/SuperSwiftMarkup/SuperSwiftMarkdownPrototype</a></p>
+          <p>A Swift-native markdown editor prototype for iOS and macOS — built to test high-performance rendering and
+          editing using <strong>TextKit 2</strong>. Targeted GitHub-Flavored Markdown support with a focus on modern
+          editing ergonomics.</p>
+          <p>The prototype explored interaction models like multi-cursor editing, block-level selection, and native
+          table editing — all backed by a custom layout engine to push the limits of TextKit's rendering fidelity.</p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>Multi-cursor + inline block selection for rapid editing workflows.</li>
+            <li>Native table editing with contextual cursor handling.</li>
+            <li>Built with TextKit 2 for speed and layout precision.</li>
           </ul>
-        </footer>
-      </section>
-    </article>
-    <footer class="main">
-      <p style="line-height: 1.3em;" class="no-break">I like my resumes the way I like my tools — handcrafted.<br>
-      So I built the tool that builds it.<br>
-      Why stop at formatting when you can define the pipeline?</p>
-    </footer>
+          <div class="tag-grid">
+            <span class="tag">Swift</span> <span class="tag">Markdown Rendering</span> <span class="tag">iOS</span>
+            <span class="tag">macOS</span> <span class="tag">TextKit 2</span> <span class="tag">Editing Tools</span>
+            <span class="tag">Open Source</span> <span class="tag">Prototype</span>
+          </div>
+        </section>
+      </article>
+    </section>
   </main>
 </body>
 </html>

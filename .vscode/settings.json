@@ -1,40 +1,29 @@
 {
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext",
-        "git-commit"
-    ],
-    "cSpell.enabledFileTypes": {
-        "toml": false,
-        "rust": false,
-        "html": true
-    },
     "cSpell.words": [
         "Asiel",
-        "blocknote",
+        "autofit",
+        "Birrell",
+        "Blockquotes",
         "Brumfield",
-        "chatbots",
-        "Colbyn",
-        "desugars",
-        "ebnf",
-        "eimg",
-        "Hindley",
-        "hostable",
+        "chupa",
+        "chups",
+        "colbyn",
+        "Desmos",
+        "Dragée",
+        "FREAKIN",
+        "gummi",
+        "gummies",
         "imager",
-        "Metge",
-        "Milner",
+        "inspectable",
+        "johndoe",
         "Monado",
-        "punchiness",
-        "salesy",
+        "nums",
+        "parseable",
+        "Rhai",
+        "subprojects",
         "Uplynk",
         "VDMS",
-        "vmaf",
-        "Wadman",
-        "xlarge",
-        "XMLAI"
+        "VMAF",
+        "Wadman"
     ]
 }

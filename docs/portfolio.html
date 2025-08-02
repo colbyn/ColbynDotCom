@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Colbyn's Site</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+  rel="stylesheet">
+  <style>
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+  </style>
+  <script type="application/ld+json">
+  [
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Colbyn Wadman",
+        "url": "https://colbyn.com",
+        "sameAs": [
+            "https://github.com/colbyn",
+            "https://www.youtube.com/@colbyn-wadman"
+        ],
+        "jobTitle": "Software Developer",
+        "knowsAbout": [
+            "Rust", "Swift", "HTML", "CSS", "JavaScript", "Compilers", "Functional Programming"
+        ]
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Colbyn Wadman's Developer Profile",
+        "description": "Portfolio and contact info for Rust/Swift developer Colbyn Wadman",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Colbyn Wadman"
+        }
+    }
+  ]
+  </script>
+  <link rel="stylesheet" href="templates/default/typography.css">
+  <link rel="stylesheet" href="templates/default/layout.css">
+</head>
+<body>
+  <link rel="stylesheet" href="components/Navigation.css">
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Homepage</a>
+      </li>
+      <li>
+        <a href="resume/index.html">Resume</a>
+      </li>
+      <li>
+        <a href="portfolio.html">Portfolio</a>
+      </li>
+    </ul>
+  </nav>
+  <link rel="stylesheet" type="text/css" href="fragments/portfolio/portfolio.css">
+  <section class="portfolio-listing">
+    <header>
+      <h1>Portfolio —&nbsp;iOS & macOS apps</h1>
+    </header>
+    <article>
+      <h2 class="center bordered">Subscript – A Freeform Note-Taking App</h2>
+      <div class="scroll-container">
+        <picture><source srcset="assets/images/screenshots/Subscript/2025-7-11.dark-mode.jpeg" media=
+        "(prefers-color-scheme: dark)"> <source srcset="assets/images/screenshots/Subscript/2025-7-11.light-mode.jpeg"
+        media="(prefers-color-scheme: light)"> <img src="assets/images/screenshots/Subscript/2025-7-11.light-mode.jpeg"
+        alt="Screenshot of the Subscript note-taking app"></picture>
+      </div>
+      <h3>Freeform, Human-Centric, and Built from the Ground Up</h3>
+      <p class="justified">Subscript was born out of frustration with the rigidity of existing note-taking apps. I
+      wanted a tool that respected the structure of serious, long-term note creation—especially for STEM content—and
+      preserved the human presence behind each note. What emerged was a freeform handwriting-based note-taking system
+      that emphasized <strong>authenticity, long-term readability, and device-independent rendering</strong>.</p>
+      <p class="justified">All input is stored in a scalable vector-based <em>model space</em>, making it
+      resolution-independent and suitable for export to <strong>PDF or web</strong>. Each note is composed of
+      entries—either structured headings or freeform strokes—recorded as a collection of stylus sample points. These
+      strokes are rendered using a customized Swift port of the <code>perfect-freehand</code> algorithm, with
+      user-defined pen tips, stroke widths, and color selections.</p>
+      <p class="justified">The system supports a <strong>semantic heading hierarchy (H1–H6)</strong>, which
+      auto-generates a navigable table of contents. This design aligns with the philosophy of LaTeX—separating content
+      from presentation—while prioritizing a beautiful reading experience over time.</p>
+      <p class="justified">Subscript also captures something rare in today’s AI-saturated landscape: <strong>undeniable
+      human authorship</strong>. No part of the note-taking flow can be faked by automation. It’s handwriting,
+      structure, and thought—preserved faithfully and rendered precisely.</p>
+      <p class="note center">For a deeper look into the philosophy and design, watch the <a href=
+      "https://youtu.be/PEC5PyNhIds?si=W6w6zOrrK29rD37C" target="_blank">video demo</a>.</p>
+      <h3>Used in the Real World — Chemistry 1010 (Fall 2021)</h3>
+      <p class="justified">Subscript wasn’t just a prototype it was my primary note-taking tool during an actual
+      college-level chemistry course. I used it to produce a complete, structured set of lecture notes for
+      <strong>Chemistry 1010 (Fall 2021)</strong>, combining handwritten formulas, semantic headings, and responsive
+      layouts. The result is a document that remains <strong>readable, navigable, and presentation-ready</strong> years
+      after it was written.</p>
+      <p class="justified">The chemistry notes showcase Subscript’s ability to manage structured academic content over
+      time, preserving both spatial arrangement and semantic organization. This example is publicly available as a web
+      export:</p>
+      <p class="center note"><a href=
+      "https://colbyn.github.io/old-school-chem-notes/dev/chemistry-1010---fall-2021/index.html" target="_blank">→ View
+      the Chemistry 1010 Notes (Web Version)</a></p>
+    </article>
+    <article>
+      <h2 class="center bordered">My Bilingual Dictionary & Phrasebook App</h2>
+      <h3>App Overview</h3>
+      <h4 class="center">The Dictionary</h4>
+      <div class="scroll-container">
+        <picture><source srcset=
+        "assets/images/screenshots/3in1-spanish/2025-7-11.dictionary-example-1.ipad.dark-mode.PNG" media=
+        "(prefers-color-scheme: dark)"> <source srcset=
+        "assets/images/screenshots/3in1-spanish/2025-7-11.dictionary-example-1.ipad.light-mode.PNG" media=
+        "(prefers-color-scheme: light)"> <img src=
+        "assets/images/screenshots/3in1-spanish/2025-7-11.dictionary-example-1.ipad.light-mode.PNG" alt=
+        "Themed Image"></picture>
+      </div>
+      <h4 class="center">The Phrasebook</h4>
+      <div class="scroll-container">
+        <picture><source srcset=
+        "assets/images/screenshots/3in1-spanish/2025-7-11.phrasebook-example-1.ipad.dark-mode.PNG" media=
+        "(prefers-color-scheme: dark)"> <source srcset=
+        "assets/images/screenshots/3in1-spanish/2025-7-11.phrasebook-example-1.ipad.light-mode.PNG" media=
+        "(prefers-color-scheme: light)"> <img src=
+        "assets/images/screenshots/3in1-spanish/2025-7-11.phrasebook-example-1.ipad.light-mode.PNG" alt=
+        "Themed Image"></picture>
+      </div>
+      <div class="scroll-container"><img class="feature" src=
+      "assets/images/screenshots/3in1-spanish/example-3-focus.PNG"></div>
+      <h3>Inside the 3in1Spanish Dataset Compiler</h3>
+      <p class="note floating">See my <a href="https://youtu.be/nofJLw51xSk?si=WrOwCT7WA6_VTBrO">YouTube Video</a> for
+      details with commentary.</p>
+      <p><strong>What if generating a bilingual dictionary and phrasebook wasn't about writing static content by hand,
+      but compiling it — like code?</strong> That’s the idea behind my 3in1Spanish app, a fully offline-native
+      iOS/macOS app that bundles a dictionary, phrasebook, and flashcards into a single lightweight tool.</p>
+      <p>At its core is a dataset pipeline inspired by compiler design, not scraping or prompt spam. This post dives
+      into how the system works, what problems it solves, and why it’s built to scale.</p>
+      <h4>Motivation</h4>
+      <p>There are tons of language apps — but they usually either:</p>
+      <ul>
+        <li>Rely on huge editorial teams for content</li>
+        <li>Depend on fragile scraping pipelines</li>
+        <li>Require online access to fetch data</li>
+      </ul>
+      <p>I wanted something different:</p>
+      <ul>
+        <li>Fully offline</li>
+        <li>Fully scalable (10 → 10M entries)</li>
+        <li>Generated programmatically</li>
+        <li>Modular, inspectable, and cache-friendly</li>
+      </ul>
+      <p>Thus: a compiler-style LLM pipeline.</p>
+      <h4>Input: Raw Source Text (EPUBs)</h4>
+      <p>The source input is clean digital books — primarily EPUBs. These are ZIP-archives of structured HTML chapters,
+      usually with cleaner markup than scraped websites.</p>
+      <p>I parse the HTML, normalize it, and feed it through deterministic preprocessors that extract usable text for
+      downstream phrase mining.</p>
+      <h4>Architecture: A Compiler for Language Data</h4>
+      <p>The pipeline has multiple stages, loosely inspired by compilers:</p>
+      <ol>
+        <li>
+          <strong>Preprocessing</strong>
+          <ul>
+            <li>Extracts and cleans source sentences</li>
+            <li>Normalizes punctuation, line breaks, headings</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Phrase Mining</strong>
+          <ul>
+            <li>LLM extracts semantically useful phrases (e.g. greetings, common patterns)</li>
+            <li>Outputs structured JSON arrays</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Metadata Generation</strong>
+          <ul>
+            <li>For each phrase or word:
+              <ul>
+                <li>English translation</li>
+                <li>IPA + simplified pronunciation</li>
+                <li>Grammar category</li>
+                <li>Notes on silent letters or irregularities</li>
+                <li>Regional variation info</li>
+                <li>Syllabification (for TTS/fallback)</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Categorization & Tagging</strong>
+          <ul>
+            <li>LLM suggests category cluster (e.g. food, travel)</li>
+            <li>Tag-based sorting for UI</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Dictionary Compilation</strong>
+          <ul>
+            <li>Lemmas + inflected forms</li>
+            <li>Disambiguates homographs</li>
+            <li>Long/short definition pairs</li>
+            <li>Example usage with glosses</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Flashcard Export</strong>
+          <ul>
+            <li>JSON entries exported into spaced-repetition-ready format</li>
+          </ul>
+        </li>
+      </ol>
+      <h4>Retry, Repair, and Idempotency</h4>
+      <p>This isn’t just prompt → response → save.</p>
+      <p>The system validates LLM output against schemas. If JSON is malformed, it attempts:</p>
+      <ul>
+        <li>Auto-repair (via Mistral or system prompt reset)</li>
+        <li>Conversational correction</li>
+        <li>Retry with fallback prompt variants</li>
+      </ul>
+      <p>Each content unit (phrase, word, definition) is identity-tracked, cached, and compiled independently. If you
+      delete or edit an entry, only its downstream dependencies are invalidated.</p>
+      <h4>Output: SQLite Database</h4>
+      <p>Final output is stored as a SQLite DB and bundled into the iOS/macOS app. This allows:</p>
+      <ul>
+        <li>Instant local access</li>
+        <li>No network dependencies</li>
+        <li>App-side fallbacks (e.g. show alt forms if IPA missing)</li>
+      </ul>
+      <h4>Stack</h4>
+      <ul>
+        <li><strong>Rust</strong> — pipeline logic, prompt orchestration, compilation</li>
+        <li><strong>Swift/SwiftUI</strong> — app frontend</li>
+        <li><strong>SQLite</strong> — offline dataset storage</li>
+        <li><strong>LLMs</strong> — OpenAI GPT-3.5, Mistral, Claude (experimental)</li>
+        <li><strong>Prompt DSL</strong> — an XML-inspired macro system for structured LLM interactions</li>
+      </ul>
+      <h4>Generalization Potential</h4>
+      <p>Although I built this for Spanish-English, the pipeline is language-agnostic. With minor changes, it could
+      generate:</p>
+      <ul>
+        <li>Medical glossaries</li>
+        <li>Legal term dictionaries</li>
+        <li>Niche phrasebooks (e.g. aviation, military, religious)</li>
+        <li>Low-resource language datasets</li>
+      </ul>
+      <p>It’s not just a phrasebook — it’s a general-purpose <strong>bilingual content compiler</strong>.</p>
+      <h4>Status & Future</h4>
+      <p>The current app works. The dataset pipeline is fully operational and idempotent. The UI is lightweight but
+      serviceable.</p>
+      <p>Next steps:</p>
+      <ul>
+        <li>Polish flashcard interaction</li>
+        <li>Add fuzzy search + transliteration</li>
+        <li>Expand prompt set for rarer parts of speech</li>
+        <li>Expose the compiler as a CLI tool</li>
+      </ul>
+      <h4>Interested?</h4>
+      <p>If you work in:</p>
+      <ul>
+        <li>EdTech</li>
+        <li>Localization</li>
+        <li>NLP toolchains</li>
+        <li>AI-powered language learning</li>
+      </ul>
+      <p>…then I’d love to connect.</p>
+      <p>I'm especially interested in contract or freelance opportunities where this infrastructure — or its
+      generalizations — can save teams time and money on multilingual content.</p>
+    </article>
+    <article>
+      <h2 class="center bordered">Bilingual Scripture App</h2>
+      <div class="scroll-container">
+        <picture><source srcset="assets/images/screenshots/DualBooks/2025-7-11.ipad.dark-mode.PNG" media=
+        "(prefers-color-scheme: dark)"> <source srcset=
+        "assets/images/screenshots/DualBooks/2025-7-11.ipad.light-mode.PNG" media="(prefers-color-scheme: light)">
+        <img style="max-height: 800px;" src="assets/images/screenshots/DualBooks/2025-7-11.ipad.light-mode.PNG" alt=
+        "Themed Image"></picture>
+      </div>
+      <p class="note floating">TODO: contact me for details —&nbsp;will be publishing the initial version to the app
+      store sometime in the near future —&nbsp;subsequent work will include more scripture content from across
+      cultures</p>
+    </article>
+  </section>
+</body>
+</html>

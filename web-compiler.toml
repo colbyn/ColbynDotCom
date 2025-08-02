@@ -1,5 +1,5 @@
 [project]
-template = "templates/global.html"
+template = "templates/default.html"
 output = "output"
 
 [[targets]]
@@ -13,9 +13,5 @@ template = "templates/resume.html"
 
 [[sources]]
 input = "pages/**/*.html"
+template = "templates/default.html"
 strip_prefix = "pages/"
-
-# [[sources]]
-# input = "blog/**/*.html"
-# template = "templates/blog-post.html"
-# hierarchy.parent = "file://./pages/blog.html"

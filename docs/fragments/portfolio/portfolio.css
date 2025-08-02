@@ -1,0 +1,38 @@
+section.portfolio-listing > header {
+    border-bottom: 1px solid #a2a2a2;
+    box-shadow: 0px 1px 2px 1px #cfcfcf;
+    padding: 10px;
+}
+
+section.portfolio-listing > header > h1 {
+    text-align: center;
+}
+
+section.portfolio-listing > article > *:not(.scroll-container) {
+    margin: 0 2rem;
+}
+
+section.portfolio-listing > article > h2 {
+    border-bottom: 1px solid #999999;
+    padding: 10px 0;
+    color: #313131;
+}
+
+section.portfolio-listing > article > h3,
+section.portfolio-listing > article > h4,
+section.portfolio-listing > article > h5,
+section.portfolio-listing > article > h6 {
+    padding: 10px 0;
+    padding-left: 1rem;
+}
+
+section.portfolio-listing p.note.floating {
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    border: 1px solid #c0c0c0;
+    width: fit-content;
+    margin: 1em auto;
+    max-width: min(800px, 95%);
+}
+
