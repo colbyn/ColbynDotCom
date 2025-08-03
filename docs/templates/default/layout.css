@@ -49,3 +49,20 @@ article, section {
     border: none;
     background: none;
 }
+
+/* === MEDIA SCREEN & DARK MODE === */
+
+@media screen and (prefers-color-scheme: dark) {
+    .scroll-container {
+        background: #000000;
+        border: 1px solid #474747;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .scroll-container img {
+        border: none;
+        box-shadow: none;
+    }
+}
