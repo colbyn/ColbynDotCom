@@ -53,3 +53,11 @@ You may find these convenience scripts helpful as well (can be invoked from any 
 ## 📄 License
 
 This demo is provided under the same license as the main project. See the [root README](../../README.md) for more information.
+
+----
+
+
+# Fallback
+
+Direct: [https://colbyn.github.io/ColbynDotCom/](https://colbyn.github.io/ColbynDotCom/)
+
