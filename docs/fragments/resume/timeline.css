@@ -84,7 +84,8 @@ section.timeline article.year section.project:last-child {
     margin-bottom: 0;
 }
 
-section.timeline article.year section.project.job {
+section.timeline article.year section.project.job,
+section.timeline article.year section.project.milestone {
     border-left: 2px solid #ff0000;
 }
 
@@ -103,6 +104,10 @@ section.timeline article.year section.project h4 {
 section.timeline article.year section.project p {
     line-height: 1.5;
     font-size: 0.9rem;
+}
+
+section.timeline .no-break {
+    break-inside: avoid;
 }
 
 section.timeline article.year section.project ul {
@@ -275,7 +280,8 @@ ul:first-of-type:not(ul ul) {
         border-left: 2px solid #6b7280; /* Softer than red, more readable */
     }
 
-    section.timeline article.year section.project.job {
+    section.timeline article.year section.project.job,
+    section.timeline article.year section.project.milestone {
         border-left: 2px solid #ef4444; /* Keep red but slightly muted */
     }
 
