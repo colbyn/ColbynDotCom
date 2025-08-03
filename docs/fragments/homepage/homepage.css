@@ -58,16 +58,21 @@
 
 .homepage div.contact-options .contact {
     background: none;
-    padding: 0.25rem;
+    padding: 1rem;
     border-radius: 0.2rem;
     border: 1px solid #ccc;
     font-size: 1.3rem;
     font-weight: 400;
     color: #666;
+    text-align: center;
 }
 
 .homepage div.contact-options .contact code {
     background: none;
+}
+
+.homepage div.contact-options .contact a {
+    text-decoration: none;
 }
 
 /* === FOOTER === */
@@ -76,9 +81,10 @@
 
 /* === MEDIA === */
 
-@media (max-width: 800px) {
-    .homepage header.main div.tags {
-        column-count: 2;
+@media (max-width: 900px) {
+    .homepage div.contact-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -88,9 +94,8 @@
         font-variant: small-caps;
     }
     .homepage div.contact-options {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -104,13 +109,13 @@
     /* CONTACT */
 
     .homepage div.contact-options {
-        border: 1px solid #444; /* Dim border for dark mode */
+        border: 1px solid #272727; /* Dim border for dark mode */
         border-left: none;
         border-right: none;
     }
 
     .homepage div.contact-options .contact {
-        border: 1px solid #555; /* Slightly brighter than outer */
+        border: 1px solid #333333; /* Slightly brighter than outer */
         color: #ddd; /* Easy-on-eyes light gray text */
     }
 }
