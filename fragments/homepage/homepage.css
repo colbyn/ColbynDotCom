@@ -73,6 +73,7 @@
 
 .homepage div.contact-options .contact a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* === FOOTER === */
