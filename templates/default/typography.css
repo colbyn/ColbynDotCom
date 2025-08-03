@@ -163,3 +163,48 @@ hr {
     margin: 2rem 0;
 }
 
+/* === MEDIA SCREEN & DARK MODE === */
+
+@media screen and (prefers-color-scheme: dark) {
+    /* === Font Stacks === */
+    :root {
+        --text-color: #eee; /* Bright text for dark backgrounds */
+    }
+
+    body {
+        background: #121212; /* Standard dark background */
+    }
+
+    /* === Blockquotes === */
+    blockquote {
+        border-left: 4px solid #555; /* Dimmed border for subtle separation */
+        color: #bbb; /* Lighter than standard text for emphasis */
+    }
+
+    /* === Code & Pre === */
+    code, pre, kbd, samp {
+        background: #1e1e1e; /* Dark gray background for code readability */
+        color: #ddd; /* Light foreground for contrast */
+    }
+
+    pre {
+        background: #1e1e1e; /* Ensure uniform dark tone */
+    }
+
+    th, td {
+        border-bottom: 1px solid #444; /* Softer than light-mode but still visible */
+    }
+
+    /* === Others === */
+    hr {
+        border-top: 1px solid #333; /* Subtle divider line */
+    }
+
+    a {
+        color: red;
+    }
+
+    a:visited {
+        color: #a78bfa; /* Soft lavender (like Tailwind's purple-400) */
+    }
+}

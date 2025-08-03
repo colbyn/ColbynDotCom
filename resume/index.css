@@ -8,3 +8,12 @@ footer.banner {
     background-color: #57ffcb;
 }
 
+
+/* === MEDIA SCREEN & DARK MODE === */
+
+@media (prefers-color-scheme: dark) {
+    footer.banner {
+        background-color: #1a3a34; /* Deep teal green: still branded, but dark mode friendly */
+        color: #e0f7f4; /* Optional: ensures footer text remains readable */
+    }   
+}

@@ -93,3 +93,24 @@
         padding: 10px;
     }
 }
+
+/* === MEDIA SCREEN & DARK MODE === */
+
+@media screen and (prefers-color-scheme: dark) {
+    .homepage header.main div.tags .tag {
+        color: #ccc; /* Light gray for legibility */
+    }
+
+    /* CONTACT */
+
+    .homepage div.contact-options {
+        border: 1px solid #444; /* Dim border for dark mode */
+        border-left: none;
+        border-right: none;
+    }
+
+    .homepage div.contact-options .contact {
+        border: 1px solid #555; /* Slightly brighter than outer */
+        color: #ddd; /* Easy-on-eyes light gray text */
+    }
+}

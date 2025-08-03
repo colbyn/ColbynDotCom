@@ -234,3 +234,78 @@ ul:first-of-type:not(ul ul) {
 }
 
 
+/* === MEDIA SCREEN & DARK MODE === */
+
+@media screen and (prefers-color-scheme: dark) {
+    /* === Base Typography & Layout === */
+
+    section.timeline {
+        color: #e5e7eb; /* Light gray for general text */
+    }
+
+    /* === Article & Year Headers === */
+
+    section.timeline .year-label {
+        color: #cbd5e1; /* Lighter gray-blue */
+        box-shadow: 0 1px 3px 2px rgb(0 0 0 / 25%); /* Increase contrast for depth */
+    }
+
+    /* === BIOGRAPHY === */
+
+    section.timeline article.biography {
+        border-left: 2px solid #4b5563; /* Neutral border with better dark contrast */
+    }
+
+    /* === Project Sections === */
+
+    section.timeline article.year section.project {
+        border-left: 2px solid #6b7280; /* Softer than red, more readable */
+    }
+
+    section.timeline article.year section.project.job {
+        border-left: 2px solid #ef4444; /* Keep red but slightly muted */
+    }
+
+    section.timeline article.year section.project h4 {
+        color: #f3f4f6; /* Light header text */
+    }
+
+    /* === Tags === */
+
+    section.timeline article.year .tag {
+        background-color: #1f2937; /* Dark blue-gray */
+        border: 1px solid #374151; /* Slightly lighter for contrast */
+        color: #f9fafb; /* Light text for tags */
+    }
+
+    /* === Links & Inline Code === */
+
+    section.timeline a {
+        color: #60a5fa; /* Lightened blue for dark mode */
+    }
+
+    section.timeline :not(pre)>code {
+        background: #1e293b; /* Dark background for code */
+        border: 1px solid #334155; /* Dark border for contrast */
+        color: #e5e7eb; /* Light code text */
+    }
+
+    /* === Optional: Blockquotes === */
+
+    section.timeline article.year section.project blockquote {
+        border-left: 4px solid #475569; /* Muted border */
+        color: #9ca3af; /* Dimmed text */
+    }
+
+    /* === BADGES & WHATNOT ==== */
+
+    section.timeline span.outline {
+        border: 1px solid #6b7280; /* Medium gray */
+    }
+
+    /* === FOOTNOTES === */
+
+    ul.footnotes {
+        color: #9ca3af; /* Soft muted gray */
+    }
+}
