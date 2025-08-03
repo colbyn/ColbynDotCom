@@ -34,6 +34,8 @@ section.timeline .year-header {
     gap: 0.25rem;
     break-after: avoid;
     padding: 10px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 
