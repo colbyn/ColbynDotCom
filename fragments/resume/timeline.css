@@ -110,6 +110,10 @@ section.timeline .no-break {
     break-inside: avoid;
 }
 
+section.timeline pre {
+    break-inside: avoid;
+}
+
 section.timeline article.year section.project ul {
     display: flex;
     flex-direction: column;
