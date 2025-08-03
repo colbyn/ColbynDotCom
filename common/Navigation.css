@@ -35,6 +35,10 @@ body > nav ul li a {
     font-weight: 300;
 }
 
+body > nav ul li a:visited {
+    color: inherit;
+}
+
 /* === MEDIA SCREEN === */
 
 
@@ -85,9 +89,6 @@ body > nav ul li a {
         content: "◯";
         color: #8859b4;
         text-rendering: geometricprecision;
-    }
-    a:visited {
-        color: #de00ff;
     }
 }
 

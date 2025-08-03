@@ -60,6 +60,12 @@
 
 .preamble div.contact-options .contact code {
     background: none;
+    color: inherit;
+}
+
+.preamble div.contact-options .contact a {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* === MEDIA SIZE === */
