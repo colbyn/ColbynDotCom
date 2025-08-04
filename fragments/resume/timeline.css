@@ -101,9 +101,11 @@ section.timeline article.year section.project h4 {
     margin-top: 1rem;
 }
 
-section.timeline article.year section.project p {
+section.timeline p {
     line-height: 1.5;
     font-size: 0.9rem;
+    text-align: justify;
+    hyphens: auto;
 }
 
 section.timeline .no-break {
@@ -176,6 +178,16 @@ section.timeline :not(pre)>code {
     border-radius: 0.25em;
 }
 
+/* === BIO SECTION ==== */
+
+section.timeline article.year section.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+/* section.timeline article.year section.info h2 */
+
 
 /* === Optional: Blockquotes === */
 
@@ -218,27 +230,29 @@ section.timeline span.outline {
 /* === FOOTNOTES === */
 
 ul.footnotes {
-    font-size: 0.85em;
-    margin-top: 1em;
-    padding-left: 1.25em;
     list-style-type: disc;
     color: #444;
-    
-    list-style: none;
     padding-left: 0;
     font-size: 0.85em;
+    list-style: none;
+    position: relative;
 }
 
 ul.footnotes li {
     margin-bottom: 0.25em;
     line-height: 1.4;
+    position: relative;
+    padding-left: 1.5em; /* aligns text under text, not symbol */
 }
 
 ul.footnotes li::before {
-    content: attr(data-symbol) " ";
-    margin-right: 0.25em;
-    display: inline-block;
+    content: attr(data-symbol);
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 1.25em;
+    text-align: center;
+    margin-right: 0.25em;
 }
 
 ul.footnotes a {

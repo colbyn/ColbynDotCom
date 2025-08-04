@@ -86,61 +86,43 @@
     <section class="timeline">
       <article class="year biography">
         <section class="info">
+          <h2>Facts</h2>
+          <ul>
+            <li>
+              <p>Top percentile OS contributor on GitHub<sup>†</sup></p>
+            </li>
+            <li>
+              <p>Most popular authored OS tool has <code>688</code> stars<sup>‡</sup></p>
+            </li>
+            <li>
+              <p>Most technically challenging authored project was a native macOS/iOS markdown renderer (proof of
+              concept) implemented in terms of Apple's TextKit2 framework with full text selection capabilities (with
+              such functionality that isn't possible with embedded web views)<sup>§</sup></p>
+            </li>
+          </ul>
+          <ul class="footnotes no-break">
+            <li data-symbol="†">See my 2019 statistics on this resume or on <a href=
+            "https://github.com/colbyn">github.com/colbyn</a>
+            </li>
+            <li data-symbol="‡">
+              <a href="https://github.com/imager-io/imager">imager-io/imager</a>
+            </li>
+            <li data-symbol="§">
+              <a href=
+              "https://github.com/SuperSwiftMarkup/SuperSwiftMarkdownPrototype">SuperSwiftMarkup/SuperSwiftMarkdownPrototype</a>
+            </li>
+          </ul>
+        </section>
+        <section class="info">
           <h2>About Me</h2>
-          <p class="justified">Self-taught systems builder with a background in functional programming and years spent
-          crafting custom parsers, transforming ASTs, and working from first principles. My path has been
-          unconventional, shaped by independent technical work that prioritized depth over conformity. I work best
-          where off-the-shelf tools break down — especially in Rust, Swift, and domains requiring tight control.</p>
-        </section>
-        <section class="info">
-          <h2>Core Competencies</h2>
-          <ul>
-            <li>
-              <strong>Compilers & Tooling</strong>
-              <ul>
-                <li>Domain-specific parsers, macro-based HTML compilers, prompt-driven content pipelines</li>
-                <li>Dataset generation from EPUBs with retry logic and schema validation</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Systems & Rendering</strong>
-              <ul>
-                <li>Rust and Swift CLI tools, TextKit2 engines, custom layout systems</li>
-                <li>UI prototyping, including a React-style renderer in Rust</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Data & Reverse Engineering</strong>
-              <ul>
-                <li>Modeling structured/unstructured data at scale</li>
-                <li>Dissecting obfuscated APIs (e.g. Google Maps payloads)</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="info">
-          <h2>Selected Projects</h2>
-          <ul>
-            <li><strong>Subscript:</strong> A Swift note-taking app with typesetting, freeform sketches and
-            offline-compiled HTML exports.</li>
-            <li><strong>WebCompiler:</strong> Rust-based static site generator with modular transforms and LLM
-            scaffolding. Replaces CMS workflows.</li>
-            <li><strong>Dataset Compiler:</strong> EPUB-to-custom dataset pipeline using LLMs, with deterministic logic
-            and app specific code-gen.</li>
-            <li><strong>Google Maps Decoder:</strong> Reverse-engineered map payloads to build a structured lead-gen
-            engine.</li>
-          </ul>
-        </section>
-        <section class="info">
-          <h2>Tooling Philosophy</h2>
-          <p class="justified">I build tools I can reason about end-to-end. Whether it’s a compiler or a templating
-          DSL, I care about determinism, clarity, and making brittle problems tractable by reshaping them at the
-          tooling layer.</p>
-        </section>
-        <section class="info">
-          <h2>Fit</h2>
-          <p class="justified">I’m drawn to roles where conventional tools fall short — places that need structural
-          thinkers and builders who prefer clarity over convenience.</p>
+          <p class="justified">I fell in love with purely functional programming in my late teens and went deep. While
+          not a professional compiler engineer, I’ve spent years building parsers, modeling data structures, and
+          transforming ASTs — an experience that shaped my approach to solving abstract, technically difficult problems
+          from first principles.</p>
+          <p>I’ve taken a nontraditional path — spending most of my twenties pursuing independent technical work. It
+          taught me how to solve hard problems (though not always how to make money from them). Today, I’m especially
+          strong in systems involving Rust and Swift, particularly in domains that demand deep control, like custom
+          TextKit2 rendering or workflows where off-the-shelf tools — including AI — fall short.</p>
         </section>
       </article>
       <h1>History</h1>
@@ -150,6 +132,8 @@
         </header>
         <section class="project job">
           <h3><span class="outline">Galileo Processing</span> <span class="role">Data Center Tech</span></h3>
+          <p>Began working there when I was 17, reported to Robert Raver, and then another manager whom gave me a few
+          pay raises for good performance while transitioning the office to the new mainframe build-out.</p>
           <div class="tag-grid">
             <span class="tag">Basic Networking</span> <span class="tag">Datacenter Misc.</span> <span class=
             "tag">Communication</span>
@@ -185,11 +169,7 @@
           <p class="no-break"><strong>GitHub:</strong><br>
           <a href="https://github.com/SubSys/Compiler" target="_blank">https://github.com/SubSys/Compiler</a></p>
           <p>A cross-language compiler pipeline that translated <strong>Elm</strong> to <strong>Rust</strong>,
-          implemented in <strong>Haskell</strong>. Built to investigate whether a statically typed frontend could
-          target systems-level output while preserving semantics and safety guarantees.</p>
-          <p>The project leveraged Haskell’s type system not just to implement compiler stages, but to assert
-          compile-time properties of the translation itself — from type mapping to memory safety behavior. The result
-          was a proof-of-concept pipeline that tested the edges of language interoperability.</p>
+          implemented in <strong>Haskell</strong> with full constraint based type inference and checking.</p>
           <h4>Key Features</h4>
           <ul>
             <li>Elm → Rust transpilation with semantic fidelity.</li>
@@ -198,8 +178,8 @@
           </ul>
           <div class="tag-grid">
             <span class="tag">Compiler Engineering</span> <span class="tag">Elm</span> <span class="tag">Rust</span>
-            <span class="tag">Haskell</span> <span class="tag">Type Systems</span> <span class=
-            "tag">Interoperability</span> <span class="tag">Open Source</span> <span class="tag">Experimental</span>
+            <span class="tag">Haskell</span> <span class="tag">Type Systems</span> <span class="tag">Open Source</span>
+            <span class="tag">Experimental</span>
           </div>
         </section>
         <section class="project">
@@ -336,16 +316,12 @@
           <p>To put this in perspective, data from a 2016–2017 GitHub ranking shows the 256th most active user recorded
           1,322 contributions—my activity surpassed this benchmark, placing me among the platform’s top contributors.
           While my work wasn’t featured in such lists due to follower-based filtering, my focus remains on creating
-          impactful projects like imager-io/imager (688 stars) and <a href=
-          "https://github.com/SuperSwiftMarkup/SuperSwiftMarkdownPrototype">SuperSwiftMarkup/SuperSwiftMarkdownPrototype</a>
-          (58 stars). These contributions, driven by expertise in Rust and Swift, reflect my commitment to building
-          tools that empower the developer community.</p>
-          <p>Today, my GitHub profile is a living portfolio of grit and expertise.</p>
+          impactful projects.</p>
           <p>Sources</p>
-          <p><strong>Top 2017 GitHub Contributors:</strong><br>
+          <p class="no-break"><strong>Top 2017 GitHub Contributors:</strong><br>
           <a href="https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/" target=
           "_blank">https://web.archive.org/web/20200415010317/https://gist.github.com/paulmillr/2657075/</a></p>
-          <p><strong>Colbyn's GitHub Profile (stats at the bottom):</strong><br>
+          <p class="no-break"><strong>Colbyn's GitHub Profile (stats at the bottom):</strong><br>
           <a href="https://github.com/colbyn?tab=overview&amp;from=2019-12-01&amp;to=2019-12-31" target=
           "_blank">https://github.com/colbyn?tab=overview&amp;from=2019-12-01&amp;to=2019-12-31</a></p>
         </section>
