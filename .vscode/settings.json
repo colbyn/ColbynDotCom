@@ -23,6 +23,7 @@
         "parseable",
         "Rhai",
         "subprojects",
+        "toolkits",
         "Uplynk",
         "VDMS",
         "VMAF",

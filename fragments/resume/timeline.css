@@ -75,6 +75,10 @@ section.timeline article.biography {
     padding-right: 1em;
 }
 
+section.timeline hr {
+    margin: 0;
+}
+
 
 /* === Project Sections === */
 
