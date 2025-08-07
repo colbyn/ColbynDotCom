@@ -1,4 +1,6 @@
-<h3><a href="https://github.com/colbyn/subscript-old" target="_blank">colbyn/subscript-old</a></h3>
+<h3 class="title">
+  <a href="https://github.com/colbyn/subscript-old" target="_blank">colbyn/subscript-old</a>
+</h3>
 
 <p>
     I renamed this project to <code>subscript-old</code> after I decide to call my note taking tools ‘subscript’ which seemed more fitting because it dealt with typesetting.
@@ -19,17 +21,27 @@
 
 <h4>Feature Highlights</h4>
 <ul>
-    <li>Inline Rust macros for <strong>media queries</strong>, <strong>keyframes</strong>, and <strong>pseudo
-            classes</strong>.</li>
-    <li><strong>Pattern-matching-like URL parsing</strong> using <code>parse_url!</code>, with totality checks
-        and type-safe bindings.</li>
-    <li><strong>Component messaging and subscriptions</strong>, including typed broadcasting and routing by
-        component type.</li>
-    <li>Versioned view macros like <code>v1!</code> for ergonomic and incremental UI design.</li>
-    <li>Zero-runtime-diffing model closer to Incremental DOM than virtual DOMs.</li>
+    <li>
+        Inline Rust macros for <strong>media queries</strong>, <strong>keyframes</strong>, and <strong>pseudo classes</strong>.
+    </li>
+    <li>
+        <strong>Pattern-matching-like URL parsing</strong> using <code>parse_url!</code>, with totality checks and type-safe bindings.
+    </li>
+    <li>
+        <strong>Component messaging and subscriptions</strong>, including typed broadcasting and routing by component type.
+    </li>
+    <li>
+        Versioned view macros like <code>v1!</code> for ergonomic and incremental UI design.
+    </li>
+    <li>
+        Zero-runtime-diffing model closer to Incremental DOM than virtual DOMs.
+    </li>
 </ul>
 
 <h4>Example Syntax</h4>
+
+<p>Client side URL routing/parsing VIA pattern-matching-like syntax:</p>
+
 <pre><code class="language-rust">parse_url! {
   [] =&gt; {
     Page::Homepage
@@ -43,6 +55,8 @@
 };
 </code></pre>
 
+<p>Intermixed markdown and styling:</p>
+
 <pre><code class="language-rust">v1! {
   display: "flex";
   button !{
@@ -52,6 +66,10 @@
     "Increment";
   }
 }</code></pre>
+
+<blockquote>
+    <p>Whe inline-styling compiles down to CSS stylesheets.</p>
+</blockquote>
 
 <div class="tag-grid">
     <span class="tag">Rust</span>
