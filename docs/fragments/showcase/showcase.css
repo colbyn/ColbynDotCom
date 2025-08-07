@@ -1,0 +1,17 @@
+section.newspaper article.section {
+    padding: 10px;
+}
+
+section.newspaper article.section section.entry {
+    border-left: 3px solid #d853aa6b;
+    padding-left: 10px;
+}
+
+section.newspaper img {
+    max-width: 100%;
+}
+
+section.newspaper a, section.newspaper code {
+    line-break: anywhere;
+}
+

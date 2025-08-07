@@ -160,7 +160,7 @@ abbr[title] {
 hr {
     border: none;
     border-top: 1px solid #ddd;
-    margin: 2rem 0;
+    margin: 0;
 }
 
 /* === MEDIA SCREEN & DARK MODE === */
