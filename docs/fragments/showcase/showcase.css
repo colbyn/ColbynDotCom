@@ -19,7 +19,12 @@ section.newspaper article.section section.entry > * {
 
 section.newspaper article.section section.entry > pre {
     padding: 1rem 1.5rem;
+    white-space: pre;
+    overflow-x: auto;
+    max-width: 100%; /* or a specific width if needed */
+    display: block;
 }
+
 
 section.newspaper article.section section.entry > img.boxed {
     border: 1px solid #585858;
