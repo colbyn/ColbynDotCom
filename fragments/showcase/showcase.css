@@ -1,5 +1,5 @@
 section.newspaper article.section h1.title {
-    box-shadow: 0 0 5px 1px #9f9f9f;
+    box-shadow: 0 0 5px 1px #3a3a3a26;
     padding: 0 1rem;
     padding-bottom: 0.2rem;
     text-align: center;
@@ -19,6 +19,13 @@ section.newspaper article.section section.entry > * {
 
 section.newspaper article.section section.entry > pre {
     padding: 1rem 1.5rem;
+}
+
+section.newspaper article.section section.entry > img.boxed {
+    border: 1px solid #585858;
+    padding: 0;
+    margin: 1rem;
+    border-radius: 0.5rem;
 }
 
 section.newspaper img {
