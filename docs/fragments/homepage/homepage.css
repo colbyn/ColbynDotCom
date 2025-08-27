@@ -18,6 +18,7 @@
 .homepage header.main h1  {
     font-size: 5rem;
     font-variant: small-caps;
+    font-weight: 900;
 }
 
 .homepage > * {
