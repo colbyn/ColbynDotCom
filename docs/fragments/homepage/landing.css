@@ -179,6 +179,7 @@ div.intro > h1.title {
 div.intro > p.tagline {
     text-align: center;
     font-weight: 200;
+    color: initial;
 }
 
 
