@@ -226,19 +226,19 @@ div.intro > p.tagline {
     /* CONTACT */
 
     .homepage div.contact-options {
-        border: 1px solid #272727; /* Dim border for dark mode */
+        border: 0.5px solid #9b8494; /* Dim border for dark mode */
         border-left: none;
         border-right: none;
     }
 
     .homepage div.contact-options .contact {
-        border: 1px solid #333333; /* Slightly brighter than outer */
+        border: 0.5px solid #9b8494; /* Slightly brighter than outer */
         color: #ddd; /* Easy-on-eyes light gray text */
     }
 
     /* INTRO */
     section.content > .title {
-        border-color: #3a3a3a;
+        border-color: #9b8494;
         box-shadow: none;
         color: #eaeaea;
     }
