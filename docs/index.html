@@ -121,7 +121,8 @@
         padding: 2rem;
         background-color: #ffffb0;
         margin-bottom: 0;
-        border-top: 0.5px solid #c4c4c4;
+        border-top: 0.5px solid;
+        border-color: #c4c4c4;
         color: #666;
         display: flex;
         flex-direction: column;
@@ -135,20 +136,22 @@
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
+        color: inherit;
     }
 
     footer.wip-banner p.extra {
         text-align: center;
         font-size: 1rem;
+        color: inherit;
     }
 
     /* === MEDIA SCREEN &amp; DARK MODE === */
 
     @media screen and (prefers-color-scheme: dark) {
         footer.wip-banner {
-            background-color: #444400; /* Dark muted yellow tone */
-            border-top: 1px solid #999; /* Softer light-gray top border */
-            color: #fffacd; /* Light goldenrod-like text color */
+            color: rgb(255, 255, 255);
+            background-color: rgb(66, 66, 18);
+            border-color: #ab8181;
         }
 
         footer.wip-banner p {

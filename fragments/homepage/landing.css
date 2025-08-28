@@ -205,7 +205,7 @@ div.intro > p.tagline {
 /* === MEDIA SCREEN & DARK MODE === */
 
 @media screen and (prefers-color-scheme: dark) {
-    p {
+    p, p:not(section.document p) {
         color: #fff;
     }
 
