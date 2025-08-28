@@ -1,24 +1,31 @@
-<footer class="homepage">
+<footer class="wip-banner">
     <p class="large">🚧 Work In Progress 🚧</p>
     <p class="extra">I'm building out this site in conjunction with my <a href="http://github.com/SuperSwiftDev/WebCompiler">static site compiler</a> and overall everything is very much a work in progress.</p>
 </footer>
 
 <style>
-    footer.homepage {
+    footer.wip-banner {
         margin-top: auto;
         padding: 2rem;
-        background-color: #ffff7a;
+        background-color: #ffffb0;
         margin-bottom: 0;
-        border-top: 1px solid #666;
+        border-top: 0.5px solid #c4c4c4;
+        color: #666;
+        display: flex;
+        flex-direction: column;
     }
 
-    footer.homepage p.large {
+    footer.wip-banner p {
+        color: inherit;
+    }
+
+    footer.wip-banner p.large {
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
     }
 
-    footer.homepage p.extra {
+    footer.wip-banner p.extra {
         text-align: center;
         font-size: 1rem;
     }
@@ -26,13 +33,13 @@
     /* === MEDIA SCREEN & DARK MODE === */
 
     @media screen and (prefers-color-scheme: dark) {
-        footer.homepage {
+        footer.wip-banner {
             background-color: #444400; /* Dark muted yellow tone */
             border-top: 1px solid #999; /* Softer light-gray top border */
             color: #fffacd; /* Light goldenrod-like text color */
         }
 
-        footer.homepage p {
+        footer.wip-banner p {
             text-align: center;
             text-transform: uppercase;
         }

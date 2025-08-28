@@ -116,21 +116,28 @@
   }
   </script>
   <style>
-    footer.homepage {
+    footer.wip-banner {
         margin-top: auto;
         padding: 2rem;
-        background-color: #ffff7a;
+        background-color: #ffffb0;
         margin-bottom: 0;
-        border-top: 1px solid #666;
+        border-top: 0.5px solid #c4c4c4;
+        color: #666;
+        display: flex;
+        flex-direction: column;
     }
 
-    footer.homepage p.large {
+    footer.wip-banner p {
+        color: inherit;
+    }
+
+    footer.wip-banner p.large {
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
     }
 
-    footer.homepage p.extra {
+    footer.wip-banner p.extra {
         text-align: center;
         font-size: 1rem;
     }
@@ -138,13 +145,13 @@
     /* === MEDIA SCREEN &amp; DARK MODE === */
 
     @media screen and (prefers-color-scheme: dark) {
-        footer.homepage {
+        footer.wip-banner {
             background-color: #444400; /* Dark muted yellow tone */
             border-top: 1px solid #999; /* Softer light-gray top border */
             color: #fffacd; /* Light goldenrod-like text color */
         }
 
-        footer.homepage p {
+        footer.wip-banner p {
             text-align: center;
             text-transform: uppercase;
         }
@@ -152,26 +159,31 @@
   </style>
 </head>
 <body>
-  <link rel="stylesheet" href="common/Navigation.css">
-  <nav>
-    <ul>
-      <li>
-        <a href="index.html">Homepage</a>
-      </li>
-      <li>
-        <a href="resume/index.html">Resume</a>
-      </li>
-      <li>
-        <a href="portfolio.html">Portfolio</a>
-      </li>
-    </ul>
-  </nav>
-  <link rel="stylesheet" type="text/css" href="fragments/homepage/homepage.css">
+  <link rel="stylesheet" type="text/css" href="fragments/homepage/landing.css">
+  <div class="compact">
+    <div class="intro">
+      <h1 class="title">Colbyn Wadman</h1>
+      <p class="tagline">Independent software researcher and problem solver.</p>
+    </div>
+    <link rel="stylesheet" href="common/Navigation.css">
+    <nav id="site-nav">
+      <ul>
+        <li>
+          <a href="index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="resume/index.html">Resume</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <main class="homepage">
     <header class="main">
-      <h1 class="me">Colbyn Wadman</h1>
-      <p class="tagline">I specialize in building custom tools and utilities — but I’ve tackled a wide range of
-      problems beyond that</p>
+      <p class="tagline">I'm an independent software researcher and writer focused on identifying and executing new
+      methodologies for building software that just "feels right."</p>
       <div class="tags">
         <p class="tag">Apps</p>
         <p class="tag">Tools</p>
@@ -224,10 +236,74 @@
         </ul>
       </article>
     </div>
+    <p style="text-align: center;"><b>See the new WIP <a href="showcase.html">Timeline Showcase</a> of all my past
+    work.</b></p>
   </section>
-  <p style="margin-left: 1rem;"><b>See the new WIP <a href="showcase.html">Timeline Showcase</a> of all my past
-  work.</b></p>
-  <footer class="homepage">
+  <section class="content document">
+    <link rel="stylesheet" type="text/css" href="fragments/homepage/about.css">
+    <h2 class="title">About Me</h2>
+    <div class="wrapped">
+      <p>I'm an independent software researcher and writer focused on identifying and executing new methodologies for
+      building software that just "feels right."</p>
+      <h3>Why Software Research Matters</h3>
+      <p>In the modern landscape, ideas are cheap. Methodology is leverage. The age of obvious wins is over and what
+      remains are complex, layered problems that resist surface-level solutions. As in deep sea oil prospecting,
+      success now comes not from foresight alone, but from adaptive exploration.</p>
+      <p>Much like how neural networks evolve from randomness into purpose through iteration, software innovation today
+      demands the same mindset. The emergence of tools like ChatGPT makes it plain: static planning is obsolete. You
+      either iterate or become irrelevant.</p>
+      <ul>
+        <li>Choose methodology over foresight.</li>
+        <li>Choose adaptive exploration over static frameworks.</li>
+        <li>Choose research when answers can't be seen upfront.</li>
+      </ul>
+      <p>Researchers operate in the dark. They chase what can't yet be mapped. They don't guess they probe, iterate,
+      and refine. The best of them are curious, disciplined, and exacting. That is the archetype I embody.</p>
+      <p>I write because I want the software I use to feel right. Most of it doesn't. Most of it is designed around
+      business models, not experience. But truly great software does more than just "work" it changes the way people
+      think and operate.</p>
+      <h3>Principles</h3>
+      <ul>
+        <li>Don’t chase success. Build methodology.</li>
+        <li>Avoid defaulting to societal definitions of achievement.</li>
+        <li>Ignore the playbook. Make a better one.</li>
+      </ul>
+      <p>Success is easy. That's its problem. Depth has a cost, those unwilling to pay it should stay on the surface.
+      I’m guided by a different metric: elegance.</p>
+      <p>As for tech bros: they optimize for the wrong variables. Web clients everywhere. Native software stagnates.
+      Everyone's chasing the obvious, no one's chasing feel. We need new primitives, not more frameworks.</p>
+      <h3>Selected Projects (Open Source Only)</h3>
+      <ul>
+        <li>
+          <strong>Hand-drawn Notes as Webpages</strong>
+          <p>Freeform, resolution-independent publishing with novel dark mode support.</p>
+        </li>
+        <li>
+          <strong>Brute Force Image Compression Optimizer</strong>
+          <p>Unorthodox but effective. Long story.</p>
+        </li>
+        <li>
+          <strong>Markdown Renderer for iOS/macOS</strong>
+          <p>GitHub Flavored Markdown, multi-cursor, native text selection via TextKit 2.</p>
+        </li>
+        <li>
+          <strong>Indentation-Based Shell Scripting Language</strong>
+          <p>Cleaner syntax, multiline support, higher-order functions.</p>
+        </li>
+        <li>
+          <strong>Monadic Parser Combinator Library in Swift</strong>
+          <p>Parser state propagated implicitly;&nbsp;elegant and clean.</p>
+        </li>
+      </ul>
+      <blockquote>
+        <p>Someone should build a Markdown-based spreadsheet app using my renderer. Native UI, scrollable layout
+        fragments —&nbsp;it would outperform every existing option.</p>
+      </blockquote>
+      <hr>
+      <p>This is not a portfolio. It’s a declaration: I don’t follow systems. I build better ones.</p>
+    </div>
+  </section>
+  <footer class="wip-banner">
     <p class="large">🚧 Work In Progress 🚧</p>
     <p class="extra">I'm building out this site in conjunction with my <a href=
     "http://github.com/SuperSwiftDev/WebCompiler">static site compiler</a> and overall everything is very much a work
