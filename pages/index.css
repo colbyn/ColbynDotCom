@@ -7,3 +7,12 @@
 html, body {
     background: var(--landing-bg-color);
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --landing-bg-color: #262626;
+        --landing-fg-color: #373434a1;
+        --landing-border-color: #474747;
+    }
+}

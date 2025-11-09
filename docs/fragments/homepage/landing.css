@@ -4,7 +4,7 @@ section.wrapper {
 
 section>.title {
     margin: 0.5rem;
-    background-color: none;
+    background-color: unset;
     color: #5f4c4c;
     text-align: center;
     padding: 0.5rem 0;
@@ -99,5 +99,28 @@ li>p.layout > a:first-child:visited {
 @media (max-width: 520px) {
     .contact-options {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    section>.title {
+        color: #ccc6c6;
+    }
+
+    li>p.layout {
+        color: #d9d9d9;
+    }
+
+    li>p.layout > a:first-child {
+        border-color: #000000;
+        color: #dcb3f0;
+    }
+
+    li>p.layout > a:first-child:visited {
+        color: #dcb3f0;
+    }
+
+    .contact-options {
+        color: #c6c6c6;
     }
 }
