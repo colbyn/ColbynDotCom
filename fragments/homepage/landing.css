@@ -56,7 +56,7 @@ li>p.layout > a:first-child:visited {
     color: #234b9c;
 }
 
-p.warning {
+.warning {
     border: 0.5px solid;
     padding: 0.5rem;
     color: #ff6060;
@@ -67,7 +67,7 @@ p.warning {
     font-size: 0.9rem;
 }
 
-p.warning strong {
+.warning strong {
     font-weight: 400;
 }
 
