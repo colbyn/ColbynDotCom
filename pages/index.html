@@ -1,13 +1,79 @@
-<link rel="stylesheet" type="text/css" href="./index.css">
-
 <hoist>
     <include src="../fragments/homepage/metadata.html"></include>
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </hoist>
 
+<include src="../fragments/components/site-banner.html"></include>
+
+<section class="wrapper">
+    <article>
+        <h2 class="title">Contact</h2>
+
+        <ul class="contact-options">
+            <li class="contact"><code>hello@colbyn.com</code></li>
+            <li class="contact"><a href="https://colbyn.com">colbyn.com</a></li>
+            <li class="contact"><code>801-367-4487</code></li>
+            <li class="contact"><a href="https://github.com/colbyn">github.com/colbyn</a></li>
+        </ul>
+    </article>
+</section>
 
 <main>
-    <include src="../fragments/components/site-banner.html"></include>
-    <include src="../fragments/homepage/landing.html"></include>
+    <section class="wrapper">
+        <h2 class="title">Quick Links</h2>
+
+        <article class="panel">
+            <h3 class="title">Professional</h3>
+            <ul>
+                <li>
+                    <p class="layout">
+                        <a href="https://github.com/colbyn">github.com/colbyn</a>
+                        <span>My GitHub profile. In 2019 I was among the top percentile contributors on GitHub.</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="layout">
+                        <a href="http://imager.io/">imager.io</a>
+                        <span>Brute-force image optimizer that finds ideal compression settings.</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="layout">
+                        <a href="https://colbyn.github.io/LegacyColbynDotCom/index.html">Legacy colbyn.com</a>
+                        <span>The old version of the site; <strong>go here to see content that hasn't yet been moved
+                                over</strong>.</span>
+                    </p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="panel">
+            <h3 class="title">Personal</h3>
+            <ul>
+                <li>
+                    <p class="layout">
+                        <a href="https://colbyn.github.io/school-notes-spring-2020/">My Beautiful
+                            Math Notes</a>
+                        <span>Best on wide viewports.</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="layout">
+                        <a
+                            href="https://colbyn.github.io/old-school-chem-notes/dev/chemistry-1010---fall-2021/index.html">My
+                            Experimental Chemistry Notes</a>
+                        <span>From the root table of contents, open any topic to see freeform notes.</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="layout">
+                        <a href="https://colbyn.github.io/tao-te-ching-book/">The Tao Te Ching</a>
+                        <span>A great online resource however the design could be better.</span>
+                    </p>
+                </li>
+            </ul>
+        </article>
+    </section>
 </main>
 
 <include src="../fragments/components/wip-footer.html"></include>
