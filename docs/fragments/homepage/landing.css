@@ -55,7 +55,7 @@ p.warning {
     padding: 0.5rem;
     color: #ff6060;
     border-color: #ff6060;
-    margin: 1rem;
+    margin: 0;
     text-align: center;
     font-weight: 100;
 }
