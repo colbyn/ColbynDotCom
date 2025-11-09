@@ -74,7 +74,6 @@ section.panel, article.panel {
 }
 
 li>p.layout {
-    flex-direction: column;
     color: #4a4040;
     font-size: 1.1rem;
     font-weight: 200;
@@ -149,6 +148,10 @@ li>p.layout > a:first-child:visited {
     font-family: var(--font-sans);
     font-size: inherit;
     font-weight: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-options>.contact code {
