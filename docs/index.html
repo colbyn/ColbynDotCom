@@ -134,6 +134,7 @@
     color: #5f4c4c;
     margin: 0 var(--landing-margin-length);
     margin-top: auto;
+    padding: 0.5rem;
   }
 
   footer.wip-banner p {
@@ -150,6 +151,12 @@
   footer.wip-banner p.extra {
     text-align: center;
     font-size: 1rem;
+  }
+
+  @media screen and (prefers-color-scheme: light) {
+    footer.wip-banner p.large {
+        opacity: 0.7;
+    }
   }
 
   @media screen and (prefers-color-scheme: dark) {
