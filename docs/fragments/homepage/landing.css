@@ -35,7 +35,7 @@ li>p.layout {
 }
 
 li>p.layout > a:first-child {
-    border: 1px solid;
+    border: 0.5px solid;
     border-color: #e3e3e3;
     padding: 0rem 0.2rem;
     border-radius: 3px;
@@ -43,6 +43,7 @@ li>p.layout > a:first-child {
     text-decoration: none;
     color: #234b9c;
     font-weight: 300;
+    padding: 0.1rem 0.5rem;
 }
 
 li>p.layout > a:first-child:visited {
@@ -50,12 +51,13 @@ li>p.layout > a:first-child:visited {
 }
 
 p.warning {
-    border: 1px solid;
+    border: 0.5px solid;
     padding: 0.5rem;
     color: #ff6060;
     border-color: #ff6060;
     margin: 1rem;
     text-align: center;
+    font-weight: 100;
 }
 
 
@@ -121,12 +123,12 @@ p.warning {
     }
 
     li>p.layout > a:first-child {
-        border-color: #000000;
-        color: #dcb3f0;
+        border-color: #59ffe6;
+        color: #59ffe6;
     }
 
     li>p.layout > a:first-child:visited {
-        color: #dcb3f0;
+        color: #59ffe6;
     }
 
     .contact-options {

@@ -11,8 +11,8 @@ html, body {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --landing-bg-color: #262626;
-        --landing-fg-color: #373434a1;
-        --landing-border-color: #474747;
+        --landing-bg-color: #191919;
+        --landing-fg-color: #2925257a;
+        --landing-border-color: #2f5066;
     }
 }
