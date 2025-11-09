@@ -74,7 +74,6 @@ section.panel, article.panel {
 }
 
 li>p.layout {
-    display: flex;
     flex-direction: column;
     color: #4a4040;
     font-size: 1.1rem;
