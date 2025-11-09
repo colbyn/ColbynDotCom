@@ -2,10 +2,30 @@
     --landing-bg-color: #ffffff;
     --landing-fg-color: #ffffffcc;
     --landing-border-color: #c4c4c4;
+    --landing-margin-length: 1.0rem;
+    --landing-vertical-gap-length: 1.0rem;
 }
 
 html, body {
     background: var(--landing-bg-color);
+}
+
+body {
+    margin: var(--landing-margin-length) 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: var(--landing-vertical-gap-length);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: var(--landing-vertical-gap-length);
 }
 
 
