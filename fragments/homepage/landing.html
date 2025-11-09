@@ -1,80 +1,66 @@
 <link rel="stylesheet" type="text/css" href="./landing.css">
 
-<div class="compact">
-    <div class="intro">
-        <h1 class="title">Colbyn Wadman</h1>
-        <p class="tagline">Independent software researcher and problem solver with a calibrated sense for what works.</p>
-    </div>
-    <include src="../../common/Navigation.html"></include>
-</div>
+<section aria-labelledby="ql-title" class="wrapper">
+    <h2 id="ql-title" class="title">Contact</h2>
 
-<main class="homepage">
-    <header class="main">
-        <p class="tagline" style="max-width: fit-content; font-weight: 200;">
-            I build software guided by taste, pattern recognition, and an internal sense of coherence. Not everything that works can be made legible, some systems just feel right. That’s the edge.
-        </p>
-        <div class="tags">
-            <p class="tag">Apps</p>
-            <p class="tag">Tools</p>
-            <p class="tag">Automation</p>
-            <p class="tag">Data/AI Pipelines</p>
-            <p class="tag">Solo Builder</p>
-            <p class="tag">Technically Fluent Writer</p>
-        </div>
-    </header>
-    
-    <div class="contact-options">
-        <p class="contact"><code>hello@colbyn.com</code></p>
-        <p class="contact"><a href="https://colbyn.com">colbyn.com</a></p>
-        <p class="contact"><code>801-367-4487</code></p>
-        <p class="contact"><a href="https://github.com/colbyn">github.com/colbyn</a></p>
-    </div>
-
-    <p class="contact-note">Available for collaboration or bespoke software systems that prioritize function, feel, and internal coherence.</p>
-</main>
-
-<section class="content">
-    <h1 class="title">Quick Links</h1>
-    <div class="flex-wrap">
-        <article class="section">
-            <h2 class="title">Professional</h2>
-            <ul class="custom">
-                <li class="pill">
-                    <a href="https://github.com/colbyn">github.com/colbyn</a>
-                    <span class="note">My GitHub Profile; an account of where I've spent way too much of my time. In 2019 I was among the top percentile contributors on GitHub.</span>
-                </li>
-                <li class="pill">
-                    <a href="http://imager.io/">imager.io</a>
-                    <span class="note">Brute force image optimizer; slow but effective at finding the most ideal compression settings for supported formats.</span>
-                </li>
-            </ul>
-        </article>
-        <article class="section">
-            <h2 class="title">Personal</h2>
-            <ul class="custom">
-                <li class="pill">
-                    <a href="https://colbyn.github.io/school-notes-spring-2020/">My Beautiful Math Notes</a>
-                    <span class="note">Looks best on wide viewports.</span>
-                </li>
-                <li class="pill">
-                    <a href="https://colbyn.github.io/old-school-chem-notes/dev/chemistry-1010---fall-2021/index.html">My Experimental Chemistry Notes</a>
-                    <span class="note">
-                        From the root table of contents, click on any option to see my freeform notes.
-                    </span>
-                </li>
-                <li class="pill">
-                    <a href="https://colbyn.github.io/tao-te-ching-book/">The Tao Te Ching</a>
-                    <span class="note">
-                        Could be better.
-                    </span>
-                </li>
-            </ul>
-        </article>
-    </div>
-    <p style="text-align: center; font-weight: 200;">See the new WIP <a href="../../pages/showcase.html">Timeline Showcase</a> of all my past work.</p>
+    <ul class="contact-options">
+        <li class="contact"><code>hello@colbyn.com</code></li>
+        <li class="contact"><a href="https://colbyn.com">colbyn.com</a></li>
+        <li class="contact"><code>801-367-4487</code></li>
+        <li class="contact"><a href="https://github.com/colbyn">github.com/colbyn</a></li>
+    </ul>
 </section>
 
-<section class="content document">
-    <include src="./about.html"></include>
-</section>
+<section aria-labelledby="ql-title" class="wrapper">
+    <h2 id="ql-title" class="title">Quick Links</h2>
 
+    <section aria-labelledby="ql-pro" class="panel">
+        <h3 id="ql-pro" class="title">Professional</h3>
+        <ul>
+            <li>
+                <p class="layout">
+                    <a id="l-github" href="https://github.com/colbyn" aria-describedby="d-github">github.com/colbyn</a>
+                    <span>My GitHub profile. In 2019 I was among the top percentile contributors on GitHub.</span>
+                </p>
+            </li>
+            <li>
+                <p class="layout">
+                    <a href="http://imager.io/" aria-describedby="d-imager">imager.io</a>
+                    <span>Brute-force image optimizer that finds ideal compression settings.</span>
+                </p>
+            </li>
+            <li>
+                <p class="layout">
+                    <a href="https://colbyn.github.io/LegacyColbynDotCom/index.html" aria-describedby="d-imager">Legacy colbyn.com</a>
+                    <span>The old version of the site (some stuff haven't yet been moved over).</span>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="ql-personal" class="panel">
+        <h3 id="ql-personal" class="title">Personal</h3>
+        <ul>
+            <li>
+                <p class="layout">
+                    <a href="https://colbyn.github.io/school-notes-spring-2020/" aria-describedby="d-math">My Beautiful
+                        Math Notes</a>
+                    <span>Best on wide viewports.</span>
+                </p>
+            </li>
+            <li>
+                <p class="layout">
+                    <a href="https://colbyn.github.io/old-school-chem-notes/dev/chemistry-1010---fall-2021/index.html"
+                        aria-describedby="d-chem">My Experimental Chemistry Notes</a>
+                    <span>From the root table of contents, open any topic to see freeform notes.</span>
+                </p>
+            </li>
+            <li>
+                <p class="layout">
+                    <a href="https://colbyn.github.io/tao-te-ching-book/" aria-describedby="d-tao">The Tao Te Ching</a>
+                    <span>A great online resource however the design could be better.</span>
+                </p>
+            </li>
+        </ul>
+    </section>
+</section>

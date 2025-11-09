@@ -1,0 +1,9 @@
+:root {
+    --landing-bg-color: #ffffff;
+    --landing-fg-color: #ffffffcc;
+    --landing-border-color: #c4c4c4;
+}
+
+html, body {
+    background: var(--landing-bg-color);
+}

@@ -1,245 +1,103 @@
-/* GENERAL */
-
-p:not(section.document p) {
-    color: #262626;
-    font-weight: 400;
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.375rem);
-    line-height: 1.6;
+section.wrapper {
+    display: contents;
 }
 
-/* COMPONENTS */
-
-.homepage {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.homepage header.main {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.homepage header.main h1, .homepage header.main p {
+section>.title {
+    margin: 0.5rem;
+    background-color: none;
+    color: #5f4c4c;
     text-align: center;
-}
-
-.homepage header.main h1  {
-    font-size: 5rem;
-    font-variant: small-caps;
-    font-weight: 900;
-}
-
-.homepage > * {
-    padding: 0 2rem;
-}
-
-/* TAGS */
-
-.homepage header.main div.tags {
-    column-count: 3;
-    display: block;
-}
-
-
-.homepage header.main div.tags .tag {
-    background: none;
-    padding: 0.3rem;
-    border-radius: 0.2rem;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: #666;
-    text-transform: uppercase;
-}
-
-/* CONTACT */
-
-.homepage div.contact-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem 0;
-    border: 1px solid #e9e9e9;
-    border-left: none;
-    border-right: none;
-    padding: 1rem;
-}
-
-.homepage div.contact-options .contact {
-    background: none;
-    padding: 1rem;
-    border-radius: 0.2rem;
-    border: 1px solid #ccc;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #666;
-    text-align: center;
-}
-
-.homepage div.contact-options .contact code {
-    background: none;
-}
-
-.homepage div.contact-options .contact a {
-    text-decoration: none;
-    color: inherit;
-}
-
-main.homepage p.contact-note {
-    text-align: center;
-    max-width: fit-content;
-    font-weight: 200;
-    padding: 0;
-    margin: 0 auto;
-}
-
-/* === SECTION === */
-
-section.content > .title {
-    padding: 0 1rem;
-    text-align: center;
-    box-shadow: 0px 1px 6px 1px #d2d2d247;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #b3b3b3;
-    color: #646464;
-    font-weight: unset;
-    font-size: 2rem;
     padding: 0.5rem 0;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: var(--landing-border-color);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-section.content > .flex-wrap {
+section.panel {
+    border: 0.5px solid;
+    border-color: var(--landing-border-color);
+    background-color: var(--landing-fg-color);
+    margin: 0 0.5rem;
+    padding: 1rem;
+}
+
+li>p.layout {
     display: flex;
-    flex: 1;
-    flex-flow: wrap;
-    gap: 1rem;
-    padding: 0 1rem;
+    flex-direction: column;
+    color: #4a4040;
+    font-size: 1.2rem;
+    font-weight: 200;
 }
 
-section.content > .flex-wrap > * {
-    flex: 1;
+li>p.layout > a:first-child {
+    border: 1px solid;
+    border-color: #e3e3e3;
+    padding: 0rem 0.2rem;
+    border-radius: 3px;
+    width: max-content;
+    text-decoration: none;
+    color: #234b9c;
+    font-weight: 300;
 }
 
-article.section > .title {
-    text-align: center;
-    color: #646464;
-    font-weight: unset;
+li>p.layout > a:first-child:visited {
+    color: #234b9c;
+}
+
+
+
+.contact-options {
+    border-color: var(--landing-border-color);
+    color: #5f4c4c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 0.75rem;
+    padding: 0.5rem;
+    grid-auto-flow: row dense;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
     font-size: 1.5rem;
-}
-
-ul.custom {
     list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
-li.pill {
-    display: flex;
-    flex-direction: column;
+.contact-options .contact {
+    color: inherit;
+    font-size: 1rem;
+    border: 1px solid;
+    border-color: inherit;
+    width: 100%;
+
+    min-width: 0;
+    /* critical: let items shrink */
+    margin: 0;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: var(--landing-fg-color);
+    font-family: var(--font-sans);
+    font-size: inherit;
 }
 
-li.pill > a {
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    padding: 2px 1rem;
+.contact-options>.contact code {
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.contact-options>.contact a {
+    color: inherit;
     text-decoration: none;
 }
 
-li.pill > span.note {
-    margin-left: 1rem;
-}
-
-/* INTRO */
-
-div.intro {
-    background-color: #ffdf83;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div.intro > h1.title {
-    font-size: clamp(3rem, 10vw + 1rem, 10rem);
-    line-height: 1.05;
-    text-align: center;
-    margin: 0;
-    letter-spacing: -0.02em;
-    font-weight: 900;
-    font-variant: small-caps;
-    color: #585858;
-}
-
-div.intro > p.tagline {
-    text-align: center;
-    font-weight: 200;
-    color: initial;
-}
-
-
-/* === MEDIA === */
-
-@media (max-width: 900px) {
-    .homepage div.contact-options {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 630px) {
-    .homepage header.main h1  {
-        font-size: 3rem;
-        font-variant: small-caps;
-    }
-    .homepage div.contact-options {
-        display: grid;
+/* hard collapse to one column on very narrow screens */
+@media (max-width: 520px) {
+    .contact-options {
         grid-template-columns: 1fr;
-    }
-}
-
-/* === MEDIA SCREEN & DARK MODE === */
-
-@media screen and (prefers-color-scheme: dark) {
-    p, p:not(section.document p) {
-        color: #fff;
-    }
-
-    article.section > .title {
-        color: #ffffff;
-    }
-
-    li.pill > a {
-        color: #ed92ff;
-    }
-
-
-    .homepage header.main div.tags .tag {
-        color: #ccc; /* Light gray for legibility */
-    }
-
-    /* CONTACT */
-
-    .homepage div.contact-options {
-        border: 0.5px solid #9b8494; /* Dim border for dark mode */
-        border-left: none;
-        border-right: none;
-    }
-
-    .homepage div.contact-options .contact {
-        border: 0.5px solid #9b8494; /* Slightly brighter than outer */
-        color: #ddd; /* Easy-on-eyes light gray text */
-    }
-
-    /* INTRO */
-    section.content > .title {
-        border-color: #9b8494;
-        box-shadow: none;
-        color: #eaeaea;
     }
 }

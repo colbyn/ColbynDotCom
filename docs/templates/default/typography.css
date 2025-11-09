@@ -73,6 +73,10 @@ p {
     hyphens: auto;
 }
 
+a, a:visited {
+    color: #0055ff;
+}
+
 /* === Lists === */
 ul, ol {
     padding-left: 1.5rem;
@@ -172,7 +176,7 @@ hr {
     }
 
     body {
-        background: #302f2f;
+        background: #121212; /* Standard dark background */
     }
 
     /* === Blockquotes === */
@@ -200,11 +204,7 @@ hr {
         border-top: 1px solid #333; /* Subtle divider line */
     }
 
-    a {
-        color: red;
-    }
-
-    a:visited {
+    a, a:visited {
         color: #a78bfa; /* Soft lavender (like Tailwind's purple-400) */
     }
 }

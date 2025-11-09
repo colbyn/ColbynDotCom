@@ -5,6 +5,13 @@ body {
     gap: 1em;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1em;
+}
+
 article, section {
     display: flex;
     flex-direction: column;
