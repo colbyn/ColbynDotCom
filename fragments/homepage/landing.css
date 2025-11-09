@@ -49,6 +49,15 @@ li>p.layout > a:first-child:visited {
     color: #234b9c;
 }
 
+p.warning {
+    border: 1px solid;
+    padding: 0.5rem;
+    color: #ff6060;
+    border-color: #ff6060;
+    margin: 1rem;
+    text-align: center;
+}
+
 
 
 .contact-options {
