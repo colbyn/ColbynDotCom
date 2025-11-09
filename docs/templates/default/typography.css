@@ -36,6 +36,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-feature-settings: "liga" 1, "kern" 1, "ss02" 1; /* Optional stylistic set for flair */
     font-variant-ligatures: common-ligatures;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 h1 {
@@ -71,6 +73,10 @@ p {
     font-family: var(--font-sans);
     text-align: justify;
     hyphens: auto;
+}
+
+a {
+    overflow-wrap: anywhere;
 }
 
 a, a:visited {

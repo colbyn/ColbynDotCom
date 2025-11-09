@@ -42,6 +42,9 @@ li>p.layout > a:first-child {
     color: #234b9c;
     font-weight: 300;
     padding: 0.1rem 0.5rem;
+    line-break: anywhere;
+    overflow-wrap: anywhere;
+    max-width: fit-content;
 }
 
 li>p.layout > a:first-child:visited {
