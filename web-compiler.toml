@@ -15,3 +15,6 @@ output = "docs"
 input = "pages/**/*.html"
 template = "templates/default.html"
 strip_prefix = "pages/"
+
+[[sources]]
+input = "assets/logo.png"
